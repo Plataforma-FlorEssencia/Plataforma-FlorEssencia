@@ -1,0 +1,93 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.funcionalidades {
+    
+    padding: 100px;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.funcionalidades h2 {
+    font-weight: bold;
+    color: #008080;
+    /* cor do título */
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/* Estilo de cada item */
+.func-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.icone {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+
+.func-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+/* Estilos para cada título */
+.atividades-title {
+    color: #E91E63;
+    /* Cor do título Atividades */
+}
+
+.diario-title {
+    color: #008080;
+    /* Cor do título Diário */
+}
+
+.conteudos-title {
+    color: #FFB300;
+    /* Cor do título Conteúdos */
+}
+
+.folha {
+    position: absolute; /* Permite posicionar a folha livremente dentro da div .video */
+    top: -200px; /* Ajuste este valor para mover a folha para cima */
+    left: -80px; /* Ajuste este valor para mover a folha para a esquerda */
+    z-index: 1; /* Garante que a folha fique acima do iframe */
+}
+
+.folha img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+
+    .planos h1{
+        font-weight: bold;
+        margin-top: 100px;
+        text-align: center;
+        border: 1px soli;
+        color: #008080;
+        align-items: center;
+        justify-content: center;
+    }
+
+.video {
+    background: linear-gradient(90deg, #EB5694, #ff97c2);
+    position: relative;
+    background-size: cover;
+    background-position: right 35% bottom 45%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 64px;
+}

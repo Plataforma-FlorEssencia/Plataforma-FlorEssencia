@@ -1,0 +1,62 @@
+.carouselSection {
+    text-align: center;
+    margin: 40px;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #EB5694; 
+    margin-bottom: 20px;
+  }
+  
+  .swiperContainer {
+    padding: 20px;
+  }
+  
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonialCard {
+    background-color: #139092; /* cor verde para o cartão */
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0; /* cor para o fundo do avatar */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .testimonialContent {
+    text-align: left;
+  }
+  
+  .name {
+    font-weight: bold;
+    color: #ffa500; /* cor amarela para o nome */
+    margin-bottom: 8px;
+  }
+  
+  .message {
+    color: white;
+  }

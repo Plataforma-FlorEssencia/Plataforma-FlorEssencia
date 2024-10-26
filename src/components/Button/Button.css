@@ -1,0 +1,78 @@
+:root {
+    --rosa-bg: #EB5694;
+    --amarelo-bg: #FFBB46;
+    --text-color: #f5f5f5;
+    --border-radius: 4px;
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 18px;
+    --font-weight: 700;
+}
+
+.rosa button,
+.rosa_borda button,
+.amarelo button,
+.amarelo_borda button {
+    padding: 10px 16px;
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    cursor: pointer;
+}
+
+.rosa button {
+    background-color: var(--rosa-bg);
+    color: var(--text-color);
+    border: none;
+}
+
+.amarelo button {
+    background-color: var(--amarelo-bg);
+    color: var(--text-color);
+    border: none;
+}
+
+.amarelo_borda button {
+    color: var(--amarelo-bg);
+    padding: 10px 16px;
+    border: 1px solid var(--amarelo-bg);
+    background-color: transparent;
+}
+
+.rosa_borda button {
+    color: var(--rosa-bg);
+    padding: 10px 16px;
+    border: 1px solid var(--rosa-bg);
+    background-color: transparent;
+}
+
+.rosa button:hover,
+.amarelo button:hover {
+    filter: brightness(80%);
+    color: var(--text-color);
+    transition: 0.25s;
+}
+
+.rosa_borda button:hover{
+    color: var(--text-color);
+    background-color: var(--rosa-bg);
+    transition: 0.25s;
+}
+
+.amarelo_borda button:hover{
+    color: var(--text-color);
+    background-color: var(--amarelo-bg);
+    transition: 0.25s;
+}
+
+@media (max-width: 530px) {
+
+    .rosa button,
+    .rosa_borda button,
+    .amarelo button,
+    .amarelo_borda button {
+        padding: 8px;
+        border-radius: 7px;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,42 @@
+.login-container {
+    height: 100vh;
+  }
+  
+  .login-form {
+    max-width: 400px;
+  }
+  
+  .logo {
+    width: 50px;
+  }
+  
+  .btn-pink {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-pink:hover {
+    background-color: #e03570;
+  }
+  
+  .text-pink {
+    color: #ff4081;
+  }
+  
+  .social-login .social-icon {
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    color: #333;
+  }
+  
+  .side-image {
+    width: 100%;          /* A imagem ocupa toda a largura da coluna */
+    height: 100vh;        /* A altura da imagem ocupa 100vh */
+    object-fit: cover;    /* Garante que a imagem cubra a área da coluna */
+  }
+  

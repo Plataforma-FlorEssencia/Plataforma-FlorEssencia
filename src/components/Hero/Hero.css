@@ -1,0 +1,10 @@
+.hero {
+    background-image: url('../../assets/mulheres_fundo_home.png');
+    background-size: cover;
+    background-position: right 35% bottom 45%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 64px;
+}
