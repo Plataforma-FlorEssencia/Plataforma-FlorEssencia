@@ -1,0 +1,59 @@
+.container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 132px;
+    position: relative; /* Para que a folha se posicione corretamente em relação a este contêiner */
+}
+
+header {
+    position: absolute;
+    box-shadow: inset;
+    z-index: 100; /* Garante que o cabeçalho fique na frente */
+}
+
+.folha-about {
+    width: 400px;
+    position: absolute; /* Faz a folha sobrepor-se ao conteúdo */
+    top: 35px; /* Ajuste para abaixar a folha */
+    left: -175px; /* Ajuste para mover a folha para a esquerda */
+    transform: rotate(65deg); /* Gira a folha em 65 graus */
+    transform-origin: center; /* Define o ponto de origem da rotação */
+    max-width: 100%; /* Garante que a folha não ultrapasse a largura da tela */
+}
+
+.flor {
+    width: 450px;
+    margin-left: auto;
+    max-width: 100%; /* Garante que a flor não ultrapasse a largura da tela */
+}
+
+.container-one {
+    margin-top: 100px;
+    border: 1px solid;
+    max-width: 400px;
+}
+
+/* Media query para responsividade */
+@media (max-width: 600px) {
+    .container-about {
+        padding-left: 20px; /* Ajusta o padding em telas menores */
+        flex-direction: column; /* Alinha os elementos em coluna em telas pequenas */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .folha-about {
+        
+        width: 30%; /* Ajusta a largura da folha para 70% em telas menores */
+        left: -20px; /* Ajusta a posição da folha para telas menores */
+        top: 10px; /* Ajusta a posição da folha para telas menores */
+    }
+    
+    .flor {
+        width: 30%; /* Ajusta a largura da flor para 70% em telas menores */
+    }
+
+    .container-one {
+        width: 100%; /* Faz com que o container ocupe toda a largura em telas menores */
+    }
+}

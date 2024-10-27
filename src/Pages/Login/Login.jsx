@@ -6,6 +6,7 @@ import logo from '../../assets/Logo.png';
 
 function Login() {
   return (
+    
     <div className="login-container container-fluid d-flex align-items-center">
       <div className="row w-100">
         {/* Formulário - Coluna à esquerda (55% da tela) */}
