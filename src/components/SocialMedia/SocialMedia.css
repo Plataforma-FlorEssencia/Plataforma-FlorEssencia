@@ -1,17 +1,41 @@
-.social-media{
+.social-media {
     padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #100F3E;
+    background-image: url(../../assets/socialBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    display: flex;
     flex-direction: column;
+    position: relative;
+    /* Adicione esta linha para o contexto de empilhamento */
+}
+.social-media h2{
+    z-index: 2;
+    font-weight: bold;
 }
 
-.icones{
+.social-media::before {
+    content: '';
+    background-image: url(../../assets/person-background.png);
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem */
+    background-size: contain; /* Ajuste para 'cover' se precisar que a imagem cubra toda a área */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.icones {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    position: relative;
+    z-index: 2;
 }

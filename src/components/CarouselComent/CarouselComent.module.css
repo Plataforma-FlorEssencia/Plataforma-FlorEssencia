@@ -37,7 +37,7 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: #e0e0e0; /* cor para o fundo do avatar */
+    background-color: #ffffff; /* cor para o fundo do avatar */
     border-radius: 50%;
     overflow: hidden;
   }

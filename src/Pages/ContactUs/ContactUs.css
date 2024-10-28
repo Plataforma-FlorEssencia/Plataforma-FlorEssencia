@@ -1,0 +1,99 @@
+.section-hero {
+    background-image: url('../../assets/mulheresFundo2.png');
+    background-size: cover;
+    background-position: right 35% bottom 45%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 64px;
+}
+
+.section-hero h1 {
+    max-width: 700px;
+    font-size: 48px;
+}
+
+/* Estilização geral */
+.align-row-contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.align-column-contactUs {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 1rem;
+}
+
+.inputContactUs,
+.inputSmallContactUs,
+.textField-contactUs {
+    border: 1px solid #00c1b5;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.inputContactUs {
+    width: 100%;
+}
+
+.inputSmallContactUs {
+    width: 48%;
+}
+
+.textField-contactUs {
+    height: 100px;
+    resize: none;
+}
+
+.submit-contactUs {
+    background-color: #EB5694;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-contactUs:hover {
+    background-color: #EB5694;
+}
+
+.align-btn-contactUs {
+    display: flex;
+    justify-content: center;
+}
+
+.img-principal-contactUs {
+    width: 500px;
+    height: auto;
+}
+
+.forms-contactUs h2 {
+    font-size: 50px;
+    color: #EB5694;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.forms-contactUs h3 {
+    font-size: 36px;
+    color: #139092;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    text-align: center; 
+}
+
+.forms-contactUs{
+    margin-top: 100px;
+}

@@ -20,7 +20,7 @@ function Header() {
                         <Nav.Link href="#plans">Planos</Nav.Link>
                         <Nav.Link href="#feedback">Depoimentos</Nav.Link>
                         <Nav.Link href="/About">Sobre</Nav.Link>
-                        <Nav.Link href="/faleconosco">Fale conosco</Nav.Link>
+                        <Nav.Link href="/ContactUs">Fale conosco</Nav.Link>
                     </Nav>
                     <Nav className='ms-auto container-buttons-header'>
                         <Link to="/login"><UniversalButton id="button-login"

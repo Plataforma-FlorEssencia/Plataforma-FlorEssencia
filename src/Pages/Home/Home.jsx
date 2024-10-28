@@ -1,9 +1,9 @@
 import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import './Home.css'
-import iconeAtividades from '../../assets/atividade_icon.png';
-import iconeDiario from '../../assets/diario_icon.png';
-import iconeConteudo from '../../assets/conteudo_icon.png';
+import iconeAtividades from '../../assets/quebra-cabeca.gif';
+import iconeDiario from '../../assets/diario.gif';
+import iconeConteudo from '../../assets/conhecimento.gif';
 import PricingTable from "../../components/Plan/PricingTable";
 import folha from "../../assets/folhas.png"
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
@@ -28,12 +28,14 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="func-item">
-                    <img src={iconeDiario} alt="Ícone de diário" className="icone" />
+            
+                <div className="func-item-invertido">
                     <div className="func-info">
                         <h3 className="diario-title">Diário</h3>
                         <p>Espaço privado e seguro para registro emocional, protegido pela LGPD.</p>
                     </div>
+                    <img src={iconeDiario} alt="Ícone de diário" className="icone" />
+
                 </div>
 
                 <div className="func-item">
@@ -57,7 +59,7 @@ function Home() {
                 <div className="folha">
                     <img src={folha} alt="" />
                 </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wpp3REYs3LA?si=xatAxZFBWzMJOjEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="730" height="415" src="https://www.youtube.com/embed/Wpp3REYs3LA?si=xatAxZFBWzMJOjEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
             <div className="planos">
@@ -67,9 +69,9 @@ function Home() {
 
 
             <SocialMedia />
-            <CarouselComent id="feedback"/>
+            <CarouselComent id="feedback" />
 
-            <FooterPreLogin/>
+            <FooterPreLogin />
         </div>
     )
 }

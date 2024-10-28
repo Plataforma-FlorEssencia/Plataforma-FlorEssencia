@@ -1,59 +1,101 @@
+body{
+    background-color: #fff;
+}
 .container-about {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 132px;
-    position: relative; /* Para que a folha se posicione corretamente em relação a este contêiner */
+    position: relative;
+
+
 }
 
-header {
-    position: absolute;
-    box-shadow: inset;
-    z-index: 100; /* Garante que o cabeçalho fique na frente */
+.navbar-about {
+    z-index: 1000;
+    position: relative;
+
 }
 
 .folha-about {
+    z-index: 1;
     width: 400px;
-    position: absolute; /* Faz a folha sobrepor-se ao conteúdo */
-    top: 35px; /* Ajuste para abaixar a folha */
-    left: -175px; /* Ajuste para mover a folha para a esquerda */
-    transform: rotate(65deg); /* Gira a folha em 65 graus */
-    transform-origin: center; /* Define o ponto de origem da rotação */
-    max-width: 100%; /* Garante que a folha não ultrapasse a largura da tela */
+    position: absolute;
+    top: 35px;
+    left: -175px;
+    transform: rotate(65deg);
+    transform-origin: center;
+    max-width: 100%;
 }
 
 .flor {
     width: 450px;
     margin-left: auto;
-    max-width: 100%; /* Garante que a flor não ultrapasse a largura da tela */
+    max-width: 100%;
+}
+
+.container-one p {
+    margin-top: 32px;
+}
+
+.container-one h1 {
+    font-weight: bold;
+    color: #EB5694;
 }
 
 .container-one {
+    gap: 200px;
     margin-top: 100px;
-    border: 1px solid;
-    max-width: 400px;
-}
-
-/* Media query para responsividade */
-@media (max-width: 600px) {
-    .container-about {
-        padding-left: 20px; /* Ajusta o padding em telas menores */
-        flex-direction: column; /* Alinha os elementos em coluna em telas pequenas */
-        align-items: flex-start; /* Alinha os itens à esquerda */
-    }
-
-    .folha-about {
-        
-        width: 30%; /* Ajusta a largura da folha para 70% em telas menores */
-        left: -20px; /* Ajusta a posição da folha para telas menores */
-        top: 10px; /* Ajusta a posição da folha para telas menores */
-    }
+    /* border: 1px solid; */
+    max-width: 800px;
     
-    .flor {
-        width: 30%; /* Ajusta a largura da flor para 70% em telas menores */
-    }
-
-    .container-one {
-        width: 100%; /* Faz com que o container ocupe toda a largura em telas menores */
-    }
 }
+
+.segundaParte {
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-team {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.developers-left,
+.developers-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+.nosso-time {
+    padding-top: 100px;
+    background-image: url('assets/Background.png'); 
+    background-size: cover;
+    
+}
+.nosso-time h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+    background-color: #EB5694;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px auto 0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+

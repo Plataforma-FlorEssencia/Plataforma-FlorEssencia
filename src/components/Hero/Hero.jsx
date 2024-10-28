@@ -1,6 +1,6 @@
 import UniversalButton from '../Button/Button';
 import './Hero.css'
-import mulheres_fundo_home from '../../assets/mulheres_fundo_home.jpg'
+
 
 function Hero() {
     return (
