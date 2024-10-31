@@ -26,9 +26,10 @@ function Header() {
                         <Link to="/login"><UniversalButton id="button-login"
                             classeEstilo="rosa_borda"
                             Btn="Login" /></Link>
-                        <UniversalButton
-                            classeEstilo="rosa"
-                            Btn="Cadastra-se" />
+                        <Link to="/Register">
+                            <UniversalButton
+                                classeEstilo="rosa"
+                                Btn="Cadastra-se" /></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

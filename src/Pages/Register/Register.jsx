@@ -1,23 +1,24 @@
 import React from 'react';
 import './Register.css';
 import { FaGoogle, FaFacebookF, FaTwitter } from 'react-icons/fa';
-import sideImage from '../../assets/MulherComputador.png';
+import sideImage from '../../assets/mulher-registro.png';
 import logo from '../../assets/Logo.png';
 
 function Register() {
   return (
     <div className="login-container container-fluid d-flex align-items-center">
       <div className="row w-100">
-        {/* Coluna da Imagem - Coluna à direita (55% da tela) */}
+        
         <div className="col-md-5 d-none d-md-flex align-items-center justify-content-start p-0">
           <img src={sideImage} alt="Woman working on laptop" className="img-fluid side-image" />
         </div>
 
-        {/* Formulário - Coluna à esquerda (45% da tela) */}
+        
         <div className="col-md-7 d-flex justify-content-center align-items-center">
           <div className="login-form p-4 shadow-sm rounded bg-white">
             <img src={logo} alt="Logo" className="logo mb-3" />
             <h2 className="mb-4">Crie sua Conta</h2>
+            
             <form>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">Nome</label>
