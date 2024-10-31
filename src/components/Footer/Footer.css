@@ -1,111 +1,120 @@
 #footerPreLogin {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    width: 100%;
-    background: #139092;
-    padding: 2vh 0 0 0;
-    margin-top: 8vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  background: #139092;
+  padding: 2vh 0 0 0;
+  margin-top: 8vh;
+  color: #FFFFFF;
+
+  & a {
     color: #FFFFFF;
-    & a {
-      color: #FFFFFF;
-    }
-    & nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-flow: row wrap;
-      min-width: 290px;
-      margin-bottom: 3rem;
-      & ul {
-        display: flex;
-        flex-flow: column;
-      }
-    }
   }
-  
-  
-  
-  .footerTop, .footerBottom {
+
+  & nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: wrap;
-    width: 80vw;
+    flex-flow: row wrap;
     min-width: 290px;
-    & figure {
-      margin-bottom: 3rem;
-      & img {
-        width: 24rem;
-        max-width: 100%;
-      }
-      & p {
-        padding-left: 1.5rem;
-        font-size: 1rem;
-        color: #FFFFFF;
-      }
+    margin-bottom: 3rem;
+
+    & ul {
+      display: flex;
+      flex-flow: column;
     }
   }
-  
-  .linkList {
-    height: 10rem;
-    width: 40%;
-    line-height: 3rem;
-  }
-  
-  .social {
-    max-width: 100%;
-    & a img {
-      height: 3rem;
-      border-radius: 3rem;
-      margin: 0 0 -0.5rem 0;
-    }
-  }
-  
-  .breakBar {
-    width: 80%;
-    height: 2px;
-    background: #FFFFFF;
-    border-radius: 100;
-    margin-bottom: 1rem;
-  }
-  
-  /* Hover */
-  
-  #footerPreLogin a:not(figure a, .social a):hover {
-    color: #FFB412;
-    font-weight: 600;
-  }
-  
-  .social a:hover {
-    background: #FFB412;
-    border-radius: 4rem;
+}
+
+
+
+.footerTop,
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  width: 80vw;
+  min-width: 290px;
+
+  & figure {
+    margin-bottom: 3rem;
+
     & img {
-      outline: #FFB412 solid 0.25rem;
+      width: 14rem;
+      max-width: 100%;
+    }
+
+    & p {
+      padding-left: 1.5rem;
+      font-size: 1rem;
+      color: #FFFFFF;
     }
   }
-  
-  /* Media Query */
-  
-  @media (max-width: 800px) {
-    .upFooter {
-      background: url('../images/upFooter.png') left 0 bottom 0/auto 40% repeat-x;
-    }
+}
+
+
+.linkList {
+  height: 6rem;
+  width: 40%;
+  line-height: 3rem;
+}
+
+.social {
+  max-width: 100%;
+
+  & a img {
+    height: 3rem;
+    border-radius: 3rem;
+    margin: 0 0 -0.5rem 0;
   }
-  
-  @media (max-width: 842px) and ( min-width: 460) {
-    .footerTop, .footerBottom {
-      justify-content: center;
-    }
-  
-    #footerPreLogin nav:not(.social) {
+}
+
+.breakBar {
+  width: 80%;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 100;
+
+}
+
+/* Hover */
+
+#footerPreLogin a:not(figure a, .social a):hover {
+  color: #FFB412;
+  font-weight: 600;
+}
+
+.social a:hover {
+  background: #FFB412;
+  border-radius: 4rem;
+
+  & img {
+    outline: #FFB412 solid 0.25rem;
+  }
+}
+
+/* Media Query */
+
+
+
+@media (max-width: 842px) and (min-width: 460) {
+
+  .footerTop,
+  .footerBottom {
+    justify-content: center;
+  }
+
+  #footerPreLogin nav:not(.social) {
+    justify-content: space-between;
+    width: 100%;
+
+    & ul {
+      display: flex;
       justify-content: space-between;
+      flex-flow: row;
       width: 100%;
-      & ul {
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row;
-        width: 100%;
-      }
     }
   }
+}

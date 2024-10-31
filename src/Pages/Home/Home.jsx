@@ -28,7 +28,7 @@ function Home() {
                     </div>
                 </div>
 
-            
+
                 <div className="func-item-invertido">
                     <div className="func-info">
                         <h3 className="diario-title">Diário</h3>
@@ -53,18 +53,22 @@ function Home() {
 
 
             {/* parte do video */}
+            <div class="container-video">
 
-            <section className="video">
+                <section className="video">
 
-                <div className="folha">
-                    <img src={folha} alt="" />
-                </div>
-                <iframe width="730" height="415" src="https://www.youtube.com/embed/Wpp3REYs3LA?si=xatAxZFBWzMJOjEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
+                    <div className="folha">
+                        <img src={folha} alt="" />
+                    </div>
+                    <iframe width="730" height="415" src="https://www.youtube.com/embed/Wpp3REYs3LA?si=xatAxZFBWzMJOjEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+            </div>
+
 
             <div className="planos">
                 <h1>Confira nossos Planos</h1>
-                <PricingTable />
+                <img src="planos.png" alt="" />
+                {/* <PricingTable /> */}
             </div>
 
 

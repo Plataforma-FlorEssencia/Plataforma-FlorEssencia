@@ -5,6 +5,7 @@ import folha from '../../assets/folhas.png';
 import retanguloVerde from '../../assets/Retangulo-verde.png';
 import Mvv from "./MVV/Mvv";
 import Team from "./OurTeam/Team";
+import FooterPreLogin from "../../components/Footer/Footer";
 
 function About() {
     return (
@@ -35,7 +36,7 @@ function About() {
                         <div className="team"><Team /></div>
                         <div className="team"><Team /></div>
                         <div className="team"><Team /></div>
-                        <div className="team"><Team /></div>   
+                        <div className="team"><Team /></div>
                     </div>
                     <div className="developers-right">
                         <div className="team"><Team /></div>
@@ -45,6 +46,7 @@ function About() {
                 </div>
             </div>
 
+            <FooterPreLogin />**
         </div>
     );
 }
