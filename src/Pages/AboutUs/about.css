@@ -39,6 +39,7 @@ body{
 }
 
 .container-one h1 {
+    font-size: 2rem;
     font-weight: bold;
     color: #EB5694;
 }
@@ -84,6 +85,7 @@ body{
     
 }
 .nosso-time h1 {
+    font-family: poppins;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +93,7 @@ body{
     padding: 20px;
     background-color: #EB5694;
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
     margin: 0px auto 0;
     border-radius: 15px;

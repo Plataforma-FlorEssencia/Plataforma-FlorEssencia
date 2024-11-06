@@ -1,45 +1,48 @@
 .profile-card {
-    display: flex;
-    align-items: center;
-    border: 2px dashed lightgray;
-    padding: 20px;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 8px;
-  }
-  
-  .profile-image img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .profile-info {
-    margin-left: 20px;
-    text-align: left;
-  }
-  
-  .name {
-    font-size: 1.5rem;
-    color: #009688;
-    margin: 0;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 10px;
-    margin: 10px 0;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .role {
-    color: #e91e63;
-    font-size: 1.2rem;
-    margin: 0;
-  }
+  display: flex;
+  align-items: center;
+  border: 3px dashed #009688;
+  padding: 20px;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+}
 
-  
+.profile-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.profile-info {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: #009688;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.social-icons .icon {
+  font-size: 40px; 
+  color: #EB5694;
+  transition: color 0.3s;
+}
+
+.social-icons .icon:hover {
+  color: #da1567; 
+}
+
+.role {
+  color: #EB5694;
+  font-size: 1.2rem;
+  margin: 0;
+}

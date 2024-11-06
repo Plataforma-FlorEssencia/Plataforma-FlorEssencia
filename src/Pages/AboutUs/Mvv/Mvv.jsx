@@ -7,13 +7,7 @@ import iconMission from '../assets/OLHO.png';
 function Mvv() {
     return (
         <div className="about-section">
-            <div className="about-item valor">
-                <img src={iconValour} alt="valores" className="about-icon" />
-                <p>
-                    Acreditamos que inclusão, empatia e respeito são fundamentais para o desenvolvimento
-                    das mulheres, promovendo diversidade e protagonismo para que possam florescer.
-                </p>
-            </div>
+            
             <div className="about-item visao">
                 <img src={iconVision} alt="Visão" className="about-icon" />
                 <p>
@@ -26,6 +20,14 @@ function Mvv() {
                 <p>
 
                     Nossa visão é ser referência em bem-estar para mulheres, fortalecendo sua autoestima e carreira, e ajudando empresas a desenvolver suas funcionárias.
+                </p>
+            </div>
+
+            <div className="about-item valor">
+                <img src={iconValour} alt="valores" className="about-icon" />
+                <p>
+                    Acreditamos que inclusão, empatia e respeito são fundamentais para o desenvolvimento
+                    das mulheres, promovendo diversidade e protagonismo para que possam florescer.
                 </p>
             </div>
         </div>

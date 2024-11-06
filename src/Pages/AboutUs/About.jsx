@@ -10,7 +10,7 @@ import FooterPreLogin from "../../components/Footer/Footer";
 function About() {
     return (
         <div>
-            <Header className='navbar-about' /> {/* Assegure-se que a classe está sendo aplicada corretamente aqui */}
+            <Header className='navbar-about' />
             <img className="folha-about" src={folha} alt="" />
             <div className="container-about">
                 <div className="container-one">
@@ -33,20 +33,41 @@ function About() {
                 <h1>Desenvolvedores</h1>
                 <div className="container-team">
                     <div className="developers-left">
-                        <div className="team"><Team /></div>
-                        <div className="team"><Team /></div>
-                        <div className="team"><Team /></div>
-                        <div className="team"><Team /></div>
+                        <div className="team"><Team name="Lucas Santana"
+                            role="Desenvolvedor FullStack"
+                            linkedin="https://linkedin.com/in/lucas-santos"
+                            github="https://github.com/LucasAlexSant" /></div>
+                        <div className="team"><Team name="Lucas Santos"
+                            role="Desenvolvedor FullStack"
+                            linkedin="https://linkedin.com/in/lucas-santos"
+                            github="https://github.com/LucasAlexSant" /></div>
+                        <div className="team"><Team name="Lucas Santana"
+                            role="Desenvolvedor FullStack"
+                            linkedin="https://linkedin.com/in/lucas-santos"
+                            github="https://github.com/LucasAlexSant" /></div>
+                        <div className="team"><Team name="Lucas Santos"
+                            role="Desenvolvedor FullStack"
+                            linkedin="https://linkedin.com/in/lucas-santos"
+                            github="https://github.com/LucasAlexSant" /></div>
                     </div>
                     <div className="developers-right">
-                        <div className="team"><Team /></div>
-                        <div className="team"><Team /></div>
-                        <div className="team"><Team /></div>
+                        <div className="team"><Team name="Lucas Santos"
+                            role="Desenvolvedor FullStack"
+                            linkedin="https://linkedin.com/in/lucas-santos"
+                            github="https://github.com/LucasAlexSant" /></div>
+                        <div className="team"><Team name="Lucas Santos"
+                            role="Desenvolvedor FullStack"
+                            linkedin="https://linkedin.com/in/lucas-santos"
+                            github="https://github.com/LucasAlexSant" /></div>
+                        <div className="team"><Team name="Lucas Santos"
+                            role="Desenvolvedor FullStack"
+                            linkedin="https://linkedin.com/in/lucas-santos"
+                            github="https://github.com/LucasAlexSant" /></div>
                     </div>
                 </div>
             </div>
 
-            <FooterPreLogin />**
+            <FooterPreLogin />
         </div>
     );
 }

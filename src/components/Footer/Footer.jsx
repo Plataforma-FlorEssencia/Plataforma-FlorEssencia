@@ -17,7 +17,7 @@ export default function FooterPreLogin() {
       <section className="footerTop">
         <nav className="linkList">
           <ul>
-            <Link to="/sobre">Sobre</Link>
+            <Link to="/About">Sobre</Link>
             <Link to="/apoie">Apoie</Link>
             <Link to="/faleConosco">Fale Conosco</Link>
           </ul>
@@ -28,7 +28,7 @@ export default function FooterPreLogin() {
           </ul>
         </nav>
         <figure>
-          <Link to={ a === 1 ? "/" : "/home"}><img src={logo} className="logo" alt="Logo" /></Link>
+          <img src={logo} className="logo" alt="Logo" />
           <p>Todos os direitos reservados | FloreEssência © 2024 </p>
         </figure>
       </section>

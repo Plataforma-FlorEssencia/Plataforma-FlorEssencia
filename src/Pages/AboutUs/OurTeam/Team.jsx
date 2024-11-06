@@ -1,27 +1,26 @@
-
 import React from 'react';
-import './Team.css'; // Import CSS for styling
-import linkedinLogo from '../assets/Lucas.png'; // Make sure to have LinkedIn and GitHub logo images
-import githubLogo from '../assets/Lucas.png';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import './Team.css';
 import profileImage from '../assets/Lucas.png'; // Add profile image
 
-function ProfileCard(props){
-  return (    
+
+function ProfileCard({ name, role, linkedin, github }) {
+  return (
     <div className="profile-card">
       <div className="profile-image">
         <img src={profileImage} alt="Profile" />
       </div>
       <div className="profile-info">
-        <h2 className="name">NOME SOBRENOME</h2>
+        <h2 className="name">{name}</h2>
         <div className="social-icons">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <img src={linkedinLogo} alt="LinkedIn" />
+          <a href={linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="icon linkedin-icon" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="GitHub" />
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <FaGithub className="icon github-icon" />
           </a>
         </div>
-        <h3 className="role">CARGO</h3>
+        <h3 className="role">{role}</h3>
       </div>
     </div>
   );

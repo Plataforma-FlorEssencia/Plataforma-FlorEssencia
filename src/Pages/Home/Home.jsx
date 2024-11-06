@@ -18,7 +18,7 @@ function Home() {
             <Hero />
 
             <div className="funcionalidades">
-                <h2>Oquê Oferecemos</h2>
+                <h2>O que oferecemos.</h2>
 
                 <div className="func-item">
                     <img src={iconeAtividades} alt="Ícone de atividades" className="icone" />
@@ -73,8 +73,9 @@ function Home() {
 
 
             <SocialMedia />
-            <CarouselComent id="feedback" />
-
+            <div id="feedback">
+                <CarouselComent />
+            </div>
             <FooterPreLogin />
         </div>
     )

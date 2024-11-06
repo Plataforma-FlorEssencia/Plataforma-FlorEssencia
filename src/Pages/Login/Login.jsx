@@ -13,7 +13,7 @@ function Login() {
         <div className="col-md-7 d-flex justify-content-center align-items-center">
           <div className="login-form p-4 shadow-sm rounded bg-white">
             <img src={logo} alt="Logo" className="logo mb-3" />
-            <h2 className="mb-4">Faça o Login</h2>
+            <h2 className="mb-4" >Faça o Login</h2>
             <form>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email</label>

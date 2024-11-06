@@ -1,4 +1,5 @@
 #footerPreLogin {
+  font-family: Poppins;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -38,8 +39,11 @@
   width: 80vw;
   min-width: 290px;
 
-  & figure {
+  figure {
     margin-bottom: 3rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 
     & img {
       width: 14rem;
@@ -84,6 +88,7 @@
 #footerPreLogin a:not(figure a, .social a):hover {
   color: #FFB412;
   font-weight: 600;
+  font-family: Poppins;
 }
 
 .social a:hover {

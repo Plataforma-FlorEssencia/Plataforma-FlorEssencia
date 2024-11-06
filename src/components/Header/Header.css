@@ -8,6 +8,7 @@
 .brand,
 .navbar a {
     color: #000000;
+    font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
     gap: 13px;
