@@ -4,6 +4,7 @@ import Login from './Pages/Login/Login'
 import Register from './Pages/Register/Register'
 import About from './Pages/AboutUs/About'
 import ContactUs from './Pages/ContactUs/ContactUs'
+import Atividade from './Pages/Atividades/Atividade'
 
 function RouterApp() {
 
@@ -15,6 +16,7 @@ function RouterApp() {
                 <Route path="/Register" element={<Register />}>Register</Route>
                 <Route path="/About" element={<About />}>About</Route>
                 <Route path="/ContactUs" element={<ContactUs />}>ContactUs</Route>
+                <Route path="/Atividade" element={<Atividade />}>Atividade</Route>
             </Routes>
         </Router>
     )

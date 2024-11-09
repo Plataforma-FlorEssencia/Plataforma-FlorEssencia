@@ -16,11 +16,11 @@ time, mark, audio, video, input {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	
 	vertical-align: baseline;
 }
 p, button, input, label ,a{
 	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
 }
 h1 {
 	font-family: 'Montserrat', sans-serif;
