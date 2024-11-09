@@ -1,0 +1,29 @@
+.consulta {
+    display: flex;
+}
+    
+
+.vitrine {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: fit-content;
+    border: 2px solid grey;
+    border-radius: 40px;
+}
+
+.vitrine-separado-esquerda {
+    width: 50%;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 40px;
+    padding: 10rem 10rem;
+    vertical-align: middle;
+}
+
+.vitrine-separado-direita {
+    width: 50%;
+    display: inline-block;
+    padding: 10rem 10rem;
+    vertical-align: middle;
+}
