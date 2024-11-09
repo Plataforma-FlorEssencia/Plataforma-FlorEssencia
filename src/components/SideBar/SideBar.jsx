@@ -23,7 +23,7 @@ const Sidebar = () => {
             <aside id="sidebar">
                 <div className="d-flex">
                     <button className="toggle-btn" type="button">
-                        <FaThLarge style={{ color: "#FFFFFF" }} />
+                        <FaThLarge  style={{ color: "#FFFFFF" }} />
                     </button>
                     <div className="sidebar-logo">
                         <a href="#">FlorEssência</a>

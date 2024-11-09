@@ -12,7 +12,9 @@ function Login() {
         {/* Formulário - Coluna à esquerda (55% da tela) */}
         <div className="col-md-7 d-flex justify-content-center align-items-center">
           <div className="login-form p-4 shadow-sm rounded bg-white">
-            <img src={logo} alt="Logo" className="logo mb-3" />
+            <a href="/">
+            <img src={logo} alt="Logo" className="logo  mb-3" style={{ width: '70px', height: 'auto' }} />
+            </a>
             <h2 className="mb-4" >Faça o Login</h2>
             <form>
               <div className="mb-3">

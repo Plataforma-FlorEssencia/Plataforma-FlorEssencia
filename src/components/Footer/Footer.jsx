@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/Logo_branco.png';
-import instagram from '../../assets/Logo_branco.png';
-import tiktok from '../../assets/Logo_branco.png';
-import linkedin from '../../assets/Logo_branco.png';
-import github from '../../assets/Logo_branco.png';
+import { FaGithub, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+
 
 import './Footer.css';
 
@@ -19,9 +17,9 @@ export default function FooterPreLogin() {
           <ul>
             <Link to="/About">Sobre</Link>
             <Link to="/apoie">Apoie</Link>
-            <Link to="/faleConosco">Fale Conosco</Link>
+            <Link to="/ContactUs">Fale Conosco</Link>
           </ul>
-          <ul style={{display: a === 1 ? 'none' : 'flex'}}>
+          <ul style={{ display: a === 1 ? 'none' : 'flex' }}>
             <Link to="/conexoes">Conectar</Link>
             <Link to="/perfil">Perfil</Link>
             <Link to="/loja">Loja</Link>
@@ -37,20 +35,20 @@ export default function FooterPreLogin() {
         <nav className="linkList">
           <Link to="/termos" className="footer-linkList">Política de Privacidade</Link>
           <Link to="/termos" className="footer-linkList">Termos de Uso</Link>
-          
+
         </nav>
         <nav className="social">
           <a href="" target="_blank" rel="noopener">
-            <img src={instagram} alt="Instagram" />
+            <FaYoutube className='icons-footer'/>
           </a>
           <a href="" target="_blank" rel="noopener">
-            <img src={tiktok} alt="TikTok" />
+            <FaTiktok className='icons-footer'/>
           </a>
           <a href="" target="_blank" rel="noopener">
-            <img src={linkedin} alt="LinkedIn" />
+            <FaInstagram className='icons-footer' />
           </a>
           <a href="" target="_blank" rel="noopener">
-            <img src={github} alt="GitHub" />
+            <FaGithub className='icons-footer' />
           </a>
         </nav>
       </section>

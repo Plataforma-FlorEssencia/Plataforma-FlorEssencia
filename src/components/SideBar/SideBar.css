@@ -72,14 +72,17 @@ a.sidebar-link {
     font-size: 0.9rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
+    height: 60px;
 }
 
 .sidebar-link .icon {
     font-size: 1.5rem; 
-    margin-right: .75rem; 
+    margin-right: 1.75rem; 
 }
 
-
+.toggle-btn{
+    font-size: 30px;
+}
 
 a.sidebar-link:hover {
     background-color: #FFF;
@@ -104,7 +107,7 @@ a.sidebar-link:hover {
 
 #sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
     display: block;
-    max-height: 15em;
+    max-height: 15rem;
     width: 100%;
     opacity: 1;
 }

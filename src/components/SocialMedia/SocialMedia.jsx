@@ -12,8 +12,8 @@ function SocialMedia() {
             <h2>Conecte-se com a gente!</h2>
 
             <div className='icones'>
-                <a href="#"><img src={instagram} alt="" /></a>
-                <a href="#"><img src={linkedin} alt="" /></a>
+                <a href="https://www.instagram.com/_floressencia._/" target="_blank" ><img src={instagram} alt="" /></a>
+                <a href="https://www.linkedin.com/company/floress%C3%AAncia0/?viewAsMember=true" target="_blank"><img src={linkedin} alt="" /></a>
                 <a href="#"><img src={tiktok} alt="" /></a>
                 <a href="#"><img src={youtube} alt="" /></a>
             </div>

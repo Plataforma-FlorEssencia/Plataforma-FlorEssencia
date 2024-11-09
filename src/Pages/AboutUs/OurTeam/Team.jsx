@@ -1,14 +1,15 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Team.css';
-import profileImage from '../assets/Lucas.png'; // Add profile image
 
 
-function ProfileCard({ name, role, linkedin, github }) {
+
+
+function ProfileCard({ imagem, name, role, linkedin, github }) {
   return (
     <div className="profile-card">
       <div className="profile-image">
-        <img src={profileImage} alt="Profile" />
+        <img src={imagem} alt="Profile" />
       </div>
       <div className="profile-info">
         <h2 className="name">{name}</h2>

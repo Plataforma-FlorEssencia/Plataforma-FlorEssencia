@@ -17,7 +17,7 @@ function Header() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto brand">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="#plans">Planos</Nav.Link>
+                        <Nav.Link href="/#plans">Planos</Nav.Link>
                         <Nav.Link href=" /#feedback">Depoimentos</Nav.Link>
                         <Nav.Link href="/About">Sobre</Nav.Link>
                         <Nav.Link href="/ContactUs">Fale conosco</Nav.Link>
