@@ -16,7 +16,7 @@ function PricingOption({ title, features, isAvailable, icon }) {
                 ))}
             </ul>
 
-            <UniversalButton className="learn-more" classeEstilo="rosa" Btn="Ver mais"/>
+            <UniversalButton className="learn-more" classeEstilo="rosa" Btn="Ver mais" />
         </div>
     );
 }

@@ -4,7 +4,7 @@ function TesteAutoEstima03() {
   return (
     <div className="container-teste-auto-estima">
       <div className="progress-bar">
-        <div className="progress-bar-filled" style={{ width: '75%' }}></div>
+        <div className="progress-bar-filled" style={{ width: '50%' }}></div>
       </div>
       <div className="question-section">
         <h2>Como você se sente em relação a si mesma na maior parte do tempo?</h2>

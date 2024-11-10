@@ -1,0 +1,77 @@
+.card-psicologas {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crp {
+  font-size: 12px;
+  color: #555;
+}
+
+.foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.card-body {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.nome {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.especialidades {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.especialidade {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 4px 0;
+}
+
+.abordagem {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.contate-me {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.contate-me i {
+  margin-right: 8px;
+}
+
+.contate-me:hover {
+  background-color: #1eb347;
+}

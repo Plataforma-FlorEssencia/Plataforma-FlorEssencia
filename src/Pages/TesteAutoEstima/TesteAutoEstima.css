@@ -18,7 +18,7 @@
   overflow: hidden;
   border-right: 2px solid white; /* Cursor piscando */
   white-space: nowrap;
-  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite, fadeIn 1s ease-out forwards;
+  animation: typing 1s steps(30, end), blink-caret 0.5s step-end infinite, fadeIn 1s ease-out forwards;
 }
 
 /* Animação de desvanecimento */
@@ -55,7 +55,7 @@
 }
 
 .progress-bar-filled {
-  width: 50%; 
+  width: 20%; 
   height: 100%;
   background-color: #ff4081;
 }

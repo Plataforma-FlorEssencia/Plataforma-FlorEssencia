@@ -27,7 +27,7 @@
     transition: all .25s ease-in-out;
     background: linear-gradient(to bottom, #EB5694, #e6367f);
     display: flex;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 0 20px 0;
     flex-direction: column;
 }
 
