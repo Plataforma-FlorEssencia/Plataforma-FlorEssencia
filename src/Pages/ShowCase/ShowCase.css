@@ -1,5 +1,7 @@
 .consulta {
-    display: flex;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
     
 
@@ -27,3 +29,71 @@
     padding: 10rem 10rem;
     vertical-align: middle;
 }
+
+.card-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-header {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-body {
+    display: flex;
+    align-items: center;
+    gap:2rem;
+  }
+  
+  .profile-pic {
+    margin-right: 0rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    flex: 1;
+  }
+  
+  .name {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .specializations, .approach {
+    margin-top: 0.5rem;
+  }
+  
+  .specialization-btn, .approach-btn {
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem 0.6rem 1rem;
+    border-radius: 15px;
+    margin: 0.2rem 0;
+    cursor: default;
+  }
+  
+  .contact-btn {
+    margin-top: 1rem;
+    text-align: center;
+    float: none;
+  }
+  
+  .whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
