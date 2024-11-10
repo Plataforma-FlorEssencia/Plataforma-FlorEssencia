@@ -16,7 +16,9 @@ function TesteAutoEstima03() {
           <button className="option-button">Muito mal</button>
         </div>
       </div>
-      <button className="continue-button">Continuar</button>
+      <a href="/TesteAutoEstima04">
+        <button className="continue-button">Continuar</button>
+      </a>
     </div>
   );
 }

@@ -1,11 +1,25 @@
-.main-atividades{
+.main-atividades {
     display: flex;
 }
 
-.body-atividade{
+.main-atividades h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+
+.body-atividade {
     width: 200vh;
-    /* border: 1px solid; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+}
+
+.hero-atividade {
+    background-image: url('/public/heroFlor.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }

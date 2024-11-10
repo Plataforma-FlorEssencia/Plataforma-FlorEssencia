@@ -7,7 +7,11 @@ function Atividade() {
         <div className="main-atividades">
             <SideBar />
             <div className="body-atividade">
-                <h1>Atividade</h1>
+                <section className='hero-atividade'>
+                    <h1 class="display-1 fw-bolder text-capitalize">OLÁ ADRIANA</h1>
+                    
+
+                </section>
             </div>
         </div>
     );
