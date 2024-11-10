@@ -12,6 +12,7 @@ import daniel from './assets/Daniel.png';
 import luiz from './assets/luiz.png'; 
 import ana from './assets/Ana.png'; 
 import adrielle from './assets/Adrielle.png'
+import malu from './assets/Malu.png'
 
 
 function About() {
@@ -65,7 +66,7 @@ function About() {
                             role="UI/UX Designer Front-End"
                             linkedin="https://linkedin.com/in/lucas-santos"
                             github="https://github.com/LucasAlexSant" /></div>
-                        <div className="team"><Team imagem={lucas} name="Maria Luiza"
+                        <div className="team"><Team imagem={malu} name="Maria Luiza"
                             role="Desenvolvedora Back-End e Marketing"
                             linkedin="https://linkedin.com/in/lucas-santos"
                             github="https://github.com/LucasAlexSant" /></div>

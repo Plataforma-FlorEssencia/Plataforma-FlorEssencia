@@ -14,10 +14,9 @@ const PricingTable = () => {
             <div className="container py-3">
                 <header>
                     <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-                        <h1 className="display-4 fw-normal text-body-emphasis">Pricing</h1>
+                        <h1 className="display-4 fw-normal text-body-emphasis">Planos FloreEssência</h1>
                         <p className="fs-5 text-body-secondary">
-                            Quickly build an effective pricing table for your potential customers with this Bootstrap example.
-                            It’s built with default Bootstrap components and utilities with little customization.
+                            Escolha o plano que melhor se adapta à sua jornada de autoconhecimento e fortalecimento profissional.
                         </p>
                     </div>
                 </header>
@@ -25,24 +24,23 @@ const PricingTable = () => {
                 <main>
                     <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
                         {[
-                            { plan: "Free", price: "$0", users: "10 users included", storage: "2 GB of storage", support: "Email support", access: "Help center access", button: "Sign up for free", btnClass: "btn-outline-primary" },
-                            { plan: "Pro", price: "$15", users: "20 users included", storage: "10 GB of storage", support: "Priority email support", access: "Help center access", button: "Get started", btnClass: "btn-pink" },
-                            { plan: "Enterprise", price: "$29", users: "30 users included", storage: "15 GB of storage", support: "Phone and email support", access: "Help center access", button: "Contact us", btnClass: "btn-pink", highlight: true }
+                            { plan: "Essencial", price: "Gratuito", sessions: "5 sessões guiadas incluídas", resources: "Acesso limitado a artigos", support: "Apoio por e-mail", button: "Começar gratuitamente", btnClass: "btn-outline" },
+                            { plan: "Avançado", price: "R$29", sessions: "20 sessões guiadas incluídas", resources: "Acesso a todos os artigos e diários", support: "Suporte prioritário", button: "Assinar agora", btnClass: "btn-pink" },
+                            { plan: "Profissional", price: "R$49", sessions: "Acesso ilimitado", resources: "Conteúdo exclusivo e mentoria", support: "Suporte personalizado", button: "Entrar em contato", btnClass: "btn-pink", highlight: true }
                         ].map((option, idx) => (
                             <div className="col" key={idx}>
-                                <div className={`card mb-4 rounded-3 shadow-sm ${option.highlight ? "border-primary" : ""}`}>
-                                    <div className={`card-header py-3 ${option.highlight ? "text-bg-primary border-primary" : ""}`}>
+                                <div className={`card mb-4 rounded-3 shadow-sm ${option.highlight ? "border" : ""}`}>
+                                    <div className={`card-header py-3 ${option.highlight ? "text-bg border" : ""}`}>
                                         <h4 className="my-0 fw-normal">{option.plan}</h4>
                                     </div>
                                     <div className="card-body">
                                         <h1 className="card-title pricing-card-title">
-                                            {option.price}<small className="text-body-secondary fw-light">/mo</small>
+                                            {option.price}<small className="text-body-secondary fw-light">/mês</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
-                                            <li>{option.users}</li>
-                                            <li>{option.storage}</li>
+                                            <li>{option.sessions}</li>
+                                            <li>{option.resources}</li>
                                             <li>{option.support}</li>
-                                            <li>{option.access}</li>
                                         </ul>
                                         <button type="button" className={`w-100 btn btn-lg ${option.btnClass}`}>
                                             {option.button}
@@ -53,32 +51,31 @@ const PricingTable = () => {
                         ))}
                     </div>
 
-                    <h2 className="display-6 text-center mb-4">Compare plans</h2>
+                    <h2 className="display-6 text-center mb-4">Comparar Planos</h2>
 
                     <div className="table-responsive">
                         <table className="table text-center">
                             <thead>
                                 <tr>
                                     <th style={{ width: "34%" }}></th>
-                                    <th style={{ width: "22%" }}>Free</th>
-                                    <th style={{ width: "22%" }}>Pro</th>
-                                    <th style={{ width: "22%" }}>Enterprise</th>
+                                    <th style={{ width: "22%" }}>Essencial</th>
+                                    <th style={{ width: "22%" }}>Avançado</th>
+                                    <th style={{ width: "22%" }}>Profissional</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {[
-                                    { feature: "Public", free: true, pro: true, enterprise: true },
-                                    { feature: "Private", free: false, pro: true, enterprise: true },
-                                    { feature: "Permissions", free: true, pro: true, enterprise: true },
-                                    { feature: "Sharing", free: false, pro: true, enterprise: true },
-                                    { feature: "Unlimited members", free: false, pro: true, enterprise: true },
-                                    { feature: "Extra security", free: false, pro: false, enterprise: true }
+                                    { feature: "Acesso a Artigos", essencial: true, avancado: true, profissional: true },
+                                    { feature: "Sessões Guiadas", essencial: true, avancado: true, profissional: true },
+                                    { feature: "Diário Pessoal", essencial: false, avancado: true, profissional: true },
+                                    { feature: "Mentoria Especializada", essencial: false, avancado: false, profissional: true },
+                                    { feature: "Apoio Prioritário", essencial: false, avancado: true, profissional: true }
                                 ].map((row, idx) => (
                                     <tr key={idx}>
                                         <th scope="row" className="text-start">{row.feature}</th>
-                                        <td>{row.free && <svg className="bi" width="24" height="24"><use xlinkHref="#check" /></svg>}</td>
-                                        <td>{row.pro && <svg className="bi" width="24" height="24"><use xlinkHref="#check" /></svg>}</td>
-                                        <td>{row.enterprise && <svg className="bi" width="24" height="24"><use xlinkHref="#check" /></svg>}</td>
+                                        <td>{row.essencial && <svg className="bi" width="24" height="24"><use xlinkHref="#check" /></svg>}</td>
+                                        <td>{row.avancado && <svg className="bi" width="24" height="24"><use xlinkHref="#check" /></svg>}</td>
+                                        <td>{row.profissional && <svg className="bi" width="24" height="24"><use xlinkHref="#check" /></svg>}</td>
                                     </tr>
                                 ))}
                             </tbody>
