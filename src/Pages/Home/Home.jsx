@@ -67,8 +67,8 @@ function Home() {
 
             <div className="planos" id="plans">
                 <h1>Confira nossos Planos</h1>
-                <img src="planos.png" alt="" />
-                {/* <PricingTable /> */}
+                {/* <img src="planos.png" alt="" /> */}
+                <PricingTable />
             </div>
 
 

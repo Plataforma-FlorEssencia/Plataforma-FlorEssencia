@@ -66,7 +66,7 @@ function About() {
                             linkedin="https://linkedin.com/in/lucas-santos"
                             github="https://github.com/LucasAlexSant" /></div>
                         <div className="team"><Team imagem={lucas} name="Maria Luiza"
-                            role="Desenvolvedora Back-End"
+                            role="Desenvolvedora Back-End e Marketing"
                             linkedin="https://linkedin.com/in/lucas-santos"
                             github="https://github.com/LucasAlexSant" /></div>
                         <div className="team"><Team imagem={paulo} name="Paulo Rosseto"

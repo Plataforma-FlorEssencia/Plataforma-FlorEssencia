@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './SideBar.css';
 import { FaUser, FaHome, FaSignOutAlt, FaThLarge, FaPencilAlt, FaBook } from 'react-icons/fa'; // Exemplo de ícones (opcional)
 
+
 const Sidebar = () => {
     useEffect(() => {
         const hamBurger = document.querySelector(".toggle-btn");
@@ -32,7 +33,7 @@ const Sidebar = () => {
                 <ul className="sidebar-nav">
 
                     <li className="sidebar-item">
-                        <a href="#" className="sidebar-link">
+                        <a href="#" className="sidebar-link" title="Atividades">
                             <FaHome className="icon" />
                             <span>Atividade</span>
                         </a>

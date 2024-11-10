@@ -6,6 +6,10 @@ import About from './Pages/AboutUs/About'
 import ContactUs from './Pages/ContactUs/ContactUs'
 import Atividade from './Pages/Atividades/Atividade'
 import ShowCase from './Pages/ShowCase/ShowCase'
+import TesteAutoEstima01 from './Pages/TesteAutoEstima/TesteAutoEstima01'
+import TesteAutoEstima02 from './Pages/TesteAutoEstima/TesteAutoEstima02'
+import TesteAutoEstima03 from './Pages/TesteAutoEstima/TesteAutoEstima03'
+
 
 function RouterApp() {
 
@@ -19,6 +23,10 @@ function RouterApp() {
                 <Route path="/ContactUs" element={<ContactUs />}>ContactUs</Route>
                 <Route path="/Atividade" element={<Atividade />}>Atividade</Route>
                 <Route path="/ShowCase" element={<ShowCase />}>ShowCase</Route>
+                <Route path="/TesteAutoEstima01" element={<TesteAutoEstima01 />}>TesteAutoEstima01</Route>
+                <Route path="/TesteAutoEstima02" element={<TesteAutoEstima02 />}>TesteAutoEstima02</Route>
+                <Route path="/TesteAutoEstima03" element={<TesteAutoEstima03 />}>TesteAutoEstima03</Route>
+
             </Routes>
         </Router>
     )
