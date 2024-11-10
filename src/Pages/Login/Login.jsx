@@ -3,20 +3,27 @@ import './Login.css';
 import { FaGoogle, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import sideImage from '../../assets/MulherComputador.png';
 import logo from '../../assets/Logo.png';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault(); // Evita o recarregamento da página
+    navigate("/TesteAutoEstima01");
+  };
+
   return (
-    
     <div className="login-container container-fluid d-flex align-items-center">
       <div className="row w-100">
         {/* Formulário - Coluna à esquerda (55% da tela) */}
         <div className="col-md-7 d-flex justify-content-center align-items-center">
           <div className="login-form p-4 shadow-sm rounded bg-white">
             <a href="/">
-            <img src={logo} alt="Logo" className="logo  mb-3" style={{ width: '70px', height: 'auto' }} />
+              <img src={logo} alt="Logo" className="logo mb-3" style={{ width: '70px', height: 'auto' }} />
             </a>
-            <h2 className="mb-4" >Faça o Login</h2>
-            <form>
+            <h2 className="mb-4">Faça o Login</h2>
+            <form onSubmit={handleLogin}>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email</label>
                 <input type="email" className="form-control" id="email" placeholder="Email" />
@@ -32,6 +39,7 @@ function Login() {
                 </div>
                 <a href="/" className="text-decoration-none">Esqueceu a senha?</a>
               </div>
+
               <button type="submit" className="btn btn-pink w-100 mb-3">FAZER LOGIN</button>
               <p className="text-center">
                 Não tem uma conta? <a href="/" className="text-decoration-none text-pink">Registrar-se</a>
@@ -45,7 +53,6 @@ function Login() {
           </div>
         </div>
 
-        
         <div className="col-md-5 d-none d-md-flex align-items-center justify-content-end p-0">
           <img src={sideImage} alt="Woman working on laptop" className="img-fluid side-image" />
         </div>

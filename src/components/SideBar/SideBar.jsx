@@ -33,7 +33,7 @@ const Sidebar = () => {
                 <ul className="sidebar-nav">
 
                     <li className="sidebar-item">
-                        <a href="#" className="sidebar-link" title="Atividades">
+                        <a href="/Atividade" className="sidebar-link" title="Atividades">
                             <FaHome className="icon" />
                             <span>Atividade</span>
                         </a>
@@ -51,14 +51,14 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li className="sidebar-item">
-                        <a href="#" className="sidebar-link">
+                        <a href="/Profile" className="sidebar-link">
                             <FaUser className="icon" />
                             <span>Profile</span>
                         </a>
                     </li>
                 </ul>
                 <div className="sidebar-footer">
-                    <a href="#" className="sidebar-link">
+                    <a href="/" className="sidebar-link">
                         <FaSignOutAlt className="icon" />
                         <span>Sair</span>
                     </a>
