@@ -6,7 +6,6 @@ import { FaPencilAlt, FaTrophy } from 'react-icons/fa';
 function Profile() {
     return (
 
-
         <div className="main-profile">
             <Sidebar />
             <main className="main-content">

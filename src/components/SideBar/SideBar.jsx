@@ -51,7 +51,7 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li className="sidebar-item">
-                        <a href="#" className="sidebar-link">
+                        <a href="/Leitura" className="sidebar-link">
                             <FaBook className="icon" />
                             <span>Leitura</span>
                         </a>

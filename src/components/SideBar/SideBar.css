@@ -10,7 +10,7 @@
 
 
 .wrapper {
-        
+    position: absolute;
     display: flex;
     min-height: 100vh;
     overflow: hidden;
@@ -21,7 +21,7 @@
 
 
 #sidebar {
-    width: 80px;
+    width: 90px;
     min-width: 70px;
     z-index: 1000;
     transition: all .25s ease-in-out;
@@ -29,10 +29,12 @@
     display: flex;
     border-radius: 0 0 20px 0;
     flex-direction: column;
+    align-content: center;
 }
 
 #sidebar.expand {
-    width: 260px;
+    align-content:center;
+    width: 280px;
     min-width: 260px;
 }
 
