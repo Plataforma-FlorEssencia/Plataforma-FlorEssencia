@@ -15,11 +15,9 @@
 }
 
 .conteudo {
-    margin-left: 30%;
     display: inline-block;
-    padding: 25px;
-    width: 45%;
-    gap: 10px;
+    padding: 20px;
+    width: 100%;
   }
   
   .input-conteiner {
@@ -27,7 +25,7 @@
     align-items: center;
     border-radius: 15px;
     border: 1px solid black;
-    width: 90%;
+    width: 40%;
   }
   
   .input-conteiner input {
@@ -60,8 +58,13 @@
     gap: 8px;
 }
     
+.dentro-conteudo {
+  margin-left: 30%;
+  margin-right: 20%;
+  padding: 20px;
+}
 
-.parent {
+.livros {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -69,21 +72,21 @@
     border-radius: 35px;
 }
     
-.div1 {
+.amostra1 {
     background-color: beige;
     width: 100px;
     grid-column: span 2 / span 2;
     grid-row: span 7 / span 7;
 }
 
-.div2 {
+.amostra2 {
     background-color: beige;
     grid-column: span 2 / span 2;
     grid-row: span 6 / span 6;
     grid-column-start: 3;
 }
 
-.div6 {
+.amostra3 {
     background-color: beige;
     grid-column: span 2 / span 2;
     grid-row: span 6 / span 6;
@@ -91,7 +94,7 @@
     grid-row-start: 4;
 }
 
-.div7 {
+.amostra4 {
     background-color: beige;
     grid-column: span 2 / span 2;
     grid-row: span 6 / span 6;

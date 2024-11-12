@@ -19,14 +19,23 @@ const Leitura = () => {
                         <button className="botao-filtro"> <div className="filtro-pesquisa"><FaFilter /></div></button>
                     </div>
                     <div>
-                        <h1> Leitura Recomendada</h1>
-                    </div>
-                    <div>
-                        <div class="parent">
-                            <div class="div1">1</div>
-                            <div class="div2">2</div>
-                            <div class="div6">3</div>
-                            <div class="div7">4</div>
+                        <div className="dentro-conteudo">
+                            <h1> Leitura Recomendada</h1>
+                            <div class="livros">
+                                <div class="amostra1">1</div>
+                                <div class="amostra2">2</div>
+                                <div class="amostra3">3</div>
+                                <div class="amostra4">4</div>
+                            </div>
+                        </div>
+                        <div className="dentro-conteudo">
+                            <h1>Acervo</h1>
+                            <div class="livros">
+                                <div class="amostra1">1</div>
+                                <div class="amostra2">2</div>
+                                <div class="amostra3">3</div>
+                                <div class="amostra4">4</div>
+                            </div>
                         </div>
                     </div>
                 </div>

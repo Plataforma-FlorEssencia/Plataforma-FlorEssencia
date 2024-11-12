@@ -12,6 +12,7 @@ import TesteAutoEstima02 from './Pages/TesteAutoEstima/TesteAutoEstima02'
 import TesteAutoEstima03 from './Pages/TesteAutoEstima/TesteAutoEstima03'
 import TesteAutoEstima04 from './Pages/TesteAutoEstima/TesteAutoEstima04'
 import Profile from './Pages/Profile/Profile'
+import Planos from './Pages/Planos/Planos'
 
 
 function RouterApp() {
@@ -34,6 +35,7 @@ function RouterApp() {
 
                 <Route path="/Profile" element={<Profile />}>Profile</Route>
                 <Route path="/Leitura" element={<Leitura />}>Leitura </Route>
+                <Route path="/Planos" element={<Planos />}>Planos </Route>
 
             </Routes>
         </Router>

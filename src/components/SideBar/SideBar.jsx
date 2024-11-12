@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { FaUser, FaHome, FaSignOutAlt, FaThLarge, FaPencilAlt, FaBook } from 'react-icons/fa';
+import { RiPlantFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom'; // Importando useNavigate
 import './SideBar.css';
 
@@ -57,11 +58,18 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li className="sidebar-item">
+                        <a href="/Planos" className="sidebar-link">
+                            <RiPlantFill className="icon" />
+                            <span>Planos</span>
+                        </a>
+                    </li>
+                    <li className="sidebar-item">
                         <a href="/Profile" className="sidebar-link">
                             <FaUser className="icon" />
                             <span>Profile</span>
                         </a>
                     </li>
+                    
                 </ul>
                 <div className="sidebar-footer">
                     <a href="#" className="sidebar-link" onClick={(e) => { e.preventDefault(); handleShowModal(); }}>

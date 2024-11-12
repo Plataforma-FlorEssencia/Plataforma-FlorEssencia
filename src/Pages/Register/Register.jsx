@@ -40,6 +40,10 @@ function Register() {
               </div>
               <button type="submit" className="btn btn-pink w-100 mb-3">CRIAR CONTA</button>
               <p className="text-center">
+              <input type="checkbox" className="form-check-input" id="Terms-of-service" />
+              <label className="form-check-label" htmlFor="Terms-of-service">Eu li e concordo com os<a href="#"> Termos de Serviço.</a></label>
+              </p><br></br>
+              <p className="text-center">
                 Já tem uma conta? <a href="/" className="text-decoration-none text-pink">Faça Login</a>
               </p>
             </form>

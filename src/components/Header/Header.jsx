@@ -16,7 +16,7 @@ function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto brand">
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/">Início</Nav.Link>
                         <Nav.Link href="/#plans">Planos</Nav.Link>
                         <Nav.Link href=" /#feedback">Depoimentos</Nav.Link>
                         <Nav.Link href="/About">Sobre</Nav.Link>

@@ -18,6 +18,7 @@ export default function FooterPreLogin() {
             <Link to="/About">Sobre</Link>
             <Link to="/apoie">Apoie</Link>
             <Link to="/ContactUs">Fale Conosco</Link>
+            <Link to="/ShowCase">Consultas</Link>
           </ul>
           <ul style={{ display: a === 1 ? 'none' : 'flex' }}>
             <Link to="/conexoes">Conectar</Link>
