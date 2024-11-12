@@ -2,3 +2,55 @@
     display: flex;
     gap: 5rem;
 }
+
+.preco {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .plan-column {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 33%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .product-icon {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .btn-principal {
+    background-color: #EB5694;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-badge {
+    background-color: rgb(19, 134, 71);
+    color: rgb(255, 255, 255);
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 0.75em;
+    border-radius: 3px;
+  }
+  
+  
+.lista-funcionalidades {
+    padding: 20px;
+}
+
+.lista-funcionalidades-gratis {
+    padding: 65px 0 0 0;
+}

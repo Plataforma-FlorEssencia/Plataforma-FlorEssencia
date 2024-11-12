@@ -14,7 +14,7 @@ const PricingTable = () => {
             <div className="container py-3">
                 <header>
                     <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-                        <h1 className="display-4 fw-normal text-body-emphasis">Planos FloreEssência</h1>
+                        <h1 className="display-4 fw-normal text-body-emphasis">Planos Floressência</h1>
                         <p className="fs-5 text-body-secondary">
                             Escolha o plano que melhor se adapta à sua jornada de autoconhecimento e fortalecimento profissional.
                         </p>
