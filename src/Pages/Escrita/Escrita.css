@@ -1,0 +1,105 @@
+.main-escrita {
+    display: flex;
+}
+
+.body-escrita {
+    padding: 20px;
+    flex: 1;
+}
+
+.reflexao {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.input-group button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.album-reflexoes {
+    background-color: #ff3399;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.diarios {
+    margin-bottom: 20px;
+}
+
+.diarios-container {
+    display: flex;
+    gap: 10px;
+}
+
+.diario-item {
+    width: 80px;
+    height: 100px;
+    border: 2px dashed #00a99d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00a99d;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.pessoal {
+    border-style: solid;
+    font-size: 16px;
+    color: #00a99d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historico {
+    margin-top: 20px;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.search-group button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.historico-list p {
+    color: #ccc;
+    font-style: italic;
+    margin: 5px 0;
+}

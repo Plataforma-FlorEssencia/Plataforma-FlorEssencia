@@ -33,6 +33,13 @@ const ShowCase = () => {
     return (
         <div>
             <Header />
+
+            <div className="section-hero-showcase">
+                <div class="top-0 mt-4 ">
+                    <h1 class="display-12 fw-bolder ">Conheça nossas pscicólogas parceiras</h1>
+                </div>
+            </div>
+
             <div className="showcase-content">
                 {psicologos.map((psicologo, index) => (
                     <CardPsicologas key={index} {...psicologo} />

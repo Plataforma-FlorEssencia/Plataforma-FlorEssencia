@@ -46,7 +46,7 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li className="sidebar-item">
-                        <a href="#" className="sidebar-link" >
+                        <a href="/Escrita" className="sidebar-link" >
                             <FaPencilAlt className="icon" />
                             <span>Escrita</span>
                         </a>

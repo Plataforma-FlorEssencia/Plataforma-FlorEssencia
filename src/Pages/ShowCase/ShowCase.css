@@ -5,3 +5,13 @@
   gap: 16px;
   padding: 20px;
 }
+
+.section-hero-showcase {
+  background-image: url('heroShowcase.png');
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 64px;
+}
