@@ -1,19 +1,40 @@
+/* Alinhamento principal da página */
 .main-escrita {
     display: flex;
+
 }
 
 .body-escrita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
     padding: 20px;
-    flex: 1;
 }
 
-.reflexao {
+.left-section,
+.right-section {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.reflexao,
+.diarios 
+
+{
     margin-bottom: 20px;
 }
 
 .input-group {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .input-group input {
@@ -39,20 +60,19 @@
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 4px;
 }
 
-.diarios {
-    margin-bottom: 20px;
-}
-
+/* Container dos diários */
 .diarios-container {
     display: flex;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .diario-item {
-    width: 80px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
     border: 2px dashed #00a99d;
     display: flex;
     align-items: center;
@@ -60,6 +80,8 @@
     color: #00a99d;
     font-size: 24px;
     cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 .pessoal {
@@ -72,14 +94,13 @@
     align-items: center;
 }
 
-.historico {
-    margin-top: 20px;
-}
 
-.search-group {
+
+.search-group { 
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .search-group input {
@@ -99,7 +120,8 @@
 }
 
 .historico-list p {
-    color: #ccc;
+    margin-top: 20px;
+    color: #999;
     font-style: italic;
-    margin: 5px 0;
+    
 }

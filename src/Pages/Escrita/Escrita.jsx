@@ -7,27 +7,32 @@ function Escrita() {
         <div className="main-escrita">
             <SideBar />
             <div className="body-escrita">
-                <div className="reflexao">
-                    <h3>Reflexão do dia</h3>
-                    <div className="input-group">
-                        <input type="text" placeholder="O que me faz feliz?" />
-                        <button>➡️</button>
-                    </div>
-                    <button className="album-reflexoes">ÁLBUM DE REFLEXÕES</button>
-                </div>
                 
-                <div className="diarios">
-                    <h3>Meus Diários</h3>
-                    <div className="diarios-container">
-                        <div className="diario-item pessoal">
-                            <span>Pessoal</span>
+                {/* Seção Esquerda */}
+                <div className="left-section">
+                    <div className="reflexao">
+                        <h3>Reflexão do dia</h3>
+                        <div className="input-group">
+                            <input type="text" placeholder="O que me faz feliz?" />
+                            <button>➡️</button>
                         </div>
-                        <div className="diario-item novo">+</div>
-                        <div className="diario-item novo">+</div>
+                        <button className="album-reflexoes">ÁLBUM DE REFLEXÕES</button>
+                    </div>
+                    
+                    <div className="diarios">
+                        <h3>Meus Diários</h3>
+                        <div className="diarios-container">
+                            <div className="diario-item pessoal">
+                                <span>Pessoal</span>
+                            </div>
+                            <div className="diario-item novo">+</div>
+                            <div className="diario-item novo">+</div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="historico">
+                {/* Seção Direita */}
+                <div className="right-section historico">
                     <h3>Histórico</h3>
                     <div className="search-group">
                         <input type="text" placeholder="Pesquisar" />
