@@ -1,15 +1,17 @@
 .main-planos {
     display: flex;
-    gap: 5rem;
+    background-image: url(/public/bg-planos.png);
+    background-repeat: no-repeat;
 }
 
-.preco {
+.preco-vitrine {
     display: flex;
     justify-content: space-between;
     padding: 20px;
   }
   
   .plan-column {
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -53,4 +55,19 @@
 
 .lista-funcionalidades-gratis {
     padding: 65px 0 0 0;
+}
+
+.titulo-preco {
+  padding: 25px;
+  font-size: 30px;
+}
+
+.alinhamento {
+  justify-content: center;
+}
+
+.titulo-preco-vitrine {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
