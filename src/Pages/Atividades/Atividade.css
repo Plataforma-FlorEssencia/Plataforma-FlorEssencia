@@ -1,16 +1,20 @@
 .main-atividades {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .main-atividades h1 {
-    font-size: 2rem;
     color: white;
+    font-size: 2rem;
 }
 
-
 .body-atividade {
-    width: 200vh;
-    
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-atividade {
@@ -19,7 +23,45 @@
     background-position: center;
     background-size: cover;
     height: 20vh;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-container {
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    width: 80%;
+    height: 80vh;
+    position: relative;
+}
+
+.grid-item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.atividade-btn img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.atividade-btn {
+
+    border-radius: 4px;
+     cursor: pointer;
+}
+
+.atividade-btn:hover {
+
+    background-color: #da236f;
+    transition: 0.2s;
+
 }
