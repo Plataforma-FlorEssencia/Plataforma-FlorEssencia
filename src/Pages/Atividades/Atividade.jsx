@@ -37,6 +37,13 @@ function Atividade() {
         <header className="hero-atividade">
           <h1 className="display-1 fw-bolder text-capitalize">OLÁ, ADRIANA</h1>
         </header>
+
+        <div className="reflexao-dia">
+          <h2 className="tag">Reflexão do Dia!</h2>
+          <p>O que me faz feliz?</p>
+          <button className='btn btn-pink btn-lg mt-2'>Vamos lá!</button>
+        </div>
+
         <div className="grid-container">
           {gridItems.map(item => (
             <div
@@ -50,7 +57,7 @@ function Atividade() {
                 overlay={renderPopover(item)}
               >
                 <Button
-                  variant="light"
+                  variant="white"
                   className="btn btn-lg"
                   aria-label={`Atividade ${item.id}`}
                 >

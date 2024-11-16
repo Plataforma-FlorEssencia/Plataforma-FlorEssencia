@@ -25,12 +25,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
 }
 
 .grid-container {
     margin-top: 50px;
-    border: 1px solid;
+    /* border: 1px solid; */
     display: grid;
     grid-template-columns: repeat(100, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -56,41 +56,63 @@
 }
 
 .popover {
-    font-family: 'Poppins', sans-serif; /* Para combinar com o restante */
-    font-size: 1rem; /* Reduzindo o tamanho da fonte */
-    width: 400px; /* Limitando a largura */
-    padding: 0.5rem; /* Ajustando o padding interno */
-    border-radius: 0.5rem; /* Bordas mais arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-family: 'Poppins', sans-serif;
+    /* Para combinar com o restante */
+    font-size: 1rem;
+    /* Reduzindo o tamanho da fonte */
+    width: 400px;
+    /* Limitando a largura */
+    padding: 0.5rem;
+    /* Ajustando o padding interno */
+    border-radius: 0.5rem;
+    /* Bordas mais arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
 }
 
 /* Cabeçalho do popover */
 .popover-header {
-    background-color: #FF4081; /* Combina com sua sidebar */
+    background-color: #FF4081;
+    /* Combina com sua sidebar */
     color: #fff;
-    border-bottom: 1px solid #FF4081; /* Linha divisória */
+    border-bottom: 1px solid #FF4081;
+    /* Linha divisória */
     padding: 0.5rem;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
 
 .popover-body {
-    font-weight: 400; 
-    padding: 0.5rem; 
-    color: #333; 
+    font-weight: 400;
+    padding: 0.5rem;
+    color: #333;
 }
 
 
 .popover .arrow::before {
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 .grid-item .btn img {
-    width: 80px; 
+    width: 80px;
     height: 80px;
 }
 
 .custom-btn-size {
     margin-top: 10px;
-    padding:  15px 90px; 
-} 
+    padding: 15px 90px;
+}
+
+.reflexao-dia {
+    width: 500px;
+    margin-top: 20px;
+    background-color: FF4081;
+    border: 4px solid #FF4081;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
