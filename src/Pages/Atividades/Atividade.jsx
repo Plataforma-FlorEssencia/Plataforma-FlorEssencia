@@ -1,43 +1,73 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SideBar from "../../components/SideBar/SideBar";
-import { FaBook, FaPuzzlePiece, FaChartLine, FaCogs, FaRocket } from 'react-icons/fa';
+import { OverlayTrigger, Popover, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Atividade.css';
 
-
 function Atividade() {
-    return (
-        <div className="main-atividades">
-            <SideBar />
+  const gridItems = [
+    { id: 1, row: 1, column: 51, link: '/pagina1' },
+    { id: 2, row: 2, column: 52, link: '/pagina2' },
+    { id: 3, row: 3, column: 53, link: '/pagina3' },
+    { id: 4, row: 4, column: 52, link: '/pagina4' },
+    { id: 5, row: 5, column: 51, link: '/pagina5' },
+    { id: 6, row: 6, column: 52, link: '/pagina6' },
+  ];
 
-            <div className="body-atividade">
-                <header className="hero-atividade">
-                    <h1 className="display-1 fw-bolder text-capitalize">OLÁ, ADRIANA</h1>
-                </header>
+  const renderPopover = (item) => (
+    <Popover id={`popover-${item.id}`}>
+      <Popover.Header as="h3">Atividade Nº {item.id}</Popover.Header>
+      <Popover.Body>
+        <p>Explore a atividade clicando no botão abaixo:</p>
+        <a
+          href={item.link}
+          className="btn btn-sm btn-pink custom-btn-size"
+          role="button"
+        >
+          PRATICAR
+        </a>
+      </Popover.Body>
+    </Popover>
+  );
 
-                <div className="grid-container">
-                    <div className="grid-item" style={{ gridRow: 1, gridColumn: 51 }}>
-                    <div className="atividade-btn"><img src="/vasinho.svg" alt="vaso" /></div>
-                    </div>
-                    <div className="grid-item" style={{ gridRow: 2, gridColumn: 52 }}>
-                    <div className="atividade-btn"><img src="/vasinho.svg" alt="vaso" /></div>
-                    </div>
-                    <div className="grid-item" style={{ gridRow: 3, gridColumn: 53 }}>
-                    <div className="atividade-btn"><img src="/vasinho.svg" alt="vaso" /></div>
-                    </div>
-                    <div className="grid-item" style={{ gridRow: 4, gridColumn: 52 }}>
-                    <div className="atividade-btn"><img src="/vasinho.svg" alt="vaso" /></div>
-                    </div>
-                    <div className="grid-item" style={{ gridRow: 5, gridColumn: 51 }}>
-                    <div className="atividade-btn"><img src="/vasinho.svg" alt="vaso" /></div>
-                    </div>
-                    <div className="grid-item" style={{ gridRow: 10, gridColumn: 52 }}>
-                        <div className="atividade-btn"><img src="/vasinho.svg" alt="vaso" /></div>
-                    </div>
-
-                </div>
+  return (
+    <div className="main-atividades">
+      <SideBar />
+      <div className="body-atividade">
+        <header className="hero-atividade">
+          <h1 className="display-1 fw-bolder text-capitalize">OLÁ, ADRIANA</h1>
+        </header>
+        <div className="grid-container">
+          {gridItems.map(item => (
+            <div
+              key={item.id}
+              className="grid-item"
+              style={{ gridRow: item.row, gridColumn: item.column }}
+            >
+              <OverlayTrigger
+                trigger="focus"
+                placement="bottom"
+                overlay={renderPopover(item)}
+              >
+                <Button
+                  variant="light"
+                  className="btn btn-lg"
+                  aria-label={`Atividade ${item.id}`}
+                >
+                  <img
+                    src="/vasinho.svg"
+                    alt={`Ícone de vaso para a atividade ${item.id}`}
+                    width="80"
+                    height="80"
+                  />
+                </Button>
+              </OverlayTrigger>
             </div>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Atividade;
