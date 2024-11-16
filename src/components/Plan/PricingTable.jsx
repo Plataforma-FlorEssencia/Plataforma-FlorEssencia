@@ -24,9 +24,9 @@ const PricingTable = () => {
                 <main>
                     <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
                         {[
-                            { plan: "Essencial", price: "Gratuito", sessions: "5 sessões guiadas incluídas", resources: "Acesso limitado a artigos", support: "Apoio por e-mail", button: "Começar gratuitamente", btnClass: "btn-outline" },
-                            { plan: "Avançado", price: "R$29", sessions: "20 sessões guiadas incluídas", resources: "Acesso a todos os artigos e diários", support: "Suporte prioritário", button: "Assinar agora", btnClass: "btn-pink" },
-                            { plan: "Profissional", price: "R$49", sessions: "Acesso ilimitado", resources: "Conteúdo exclusivo e mentoria", support: "Suporte personalizado", button: "Entrar em contato", btnClass: "btn-pink", highlight: true }
+                            { plan: "Essencial", price: "Gratuito", sessions: "Jornada gamificada", resources: "Reflexões diárias", support: "Diários da trilha de jogos", button: "Começar gratuitamente", btnClass: "btn-outline" },
+                            { plan: "Avançado", price: "R$29,90", sessions: "Artigos e conteúdos personalizados ilimitados", resources: "Temas exclusivos de escrita", support: "Criação ilimitada de notas pessoais", button: "Assinar agora", btnClass: "btn-pink" },
+                            { plan: "Profissional", price: "R$299", sessions: "Tudo dos planos anteriores ", resources: "mais", support: "2 meses gratuitos de desconto", button: "Entrar em contato", btnClass: "btn-pink", highlight: true }
                         ].map((option, idx) => (
                             <div className="col" key={idx}>
                                 <div className={`card mb-4 rounded-3 shadow-sm ${option.highlight ? "border" : ""}`}>
@@ -65,11 +65,11 @@ const PricingTable = () => {
                             </thead>
                             <tbody>
                                 {[
-                                    { feature: "Acesso a Artigos", essencial: true, avancado: true, profissional: true },
-                                    { feature: "Sessões Guiadas", essencial: true, avancado: true, profissional: true },
-                                    { feature: "Diário Pessoal", essencial: false, avancado: true, profissional: true },
-                                    { feature: "Mentoria Especializada", essencial: false, avancado: false, profissional: true },
-                                    { feature: "Apoio Prioritário", essencial: false, avancado: true, profissional: true }
+                                    { feature: "Acesso a Artigos Ilimitados", essencial: false, avancado: true, profissional: true },
+                                    { feature: "Jornada Gamificada", essencial: true, avancado: true, profissional: true },
+                                    { feature: "Reflexões diárias", essencial: true, avancado: true, profissional: true },
+                                    { feature: "Diários da trilha de jogos", essencial: true, avancado: true, profissional: true },
+                                    { feature: "Criação Ilimitada de Notas Pessoais", essencial: false, avancado: true, profissional: true }
                                 ].map((row, idx) => (
                                     <tr key={idx}>
                                         <th scope="row" className="text-start">{row.feature}</th>

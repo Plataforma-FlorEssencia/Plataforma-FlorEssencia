@@ -20,41 +20,37 @@ function Planos() {
                             <div className="product-icon">Plano Gratuito</div>
                             <ul className="lista-funcionalidades-gratis">
                                 <li>Jornada Gamificada</li>
+                                <li>Conquistas</li>
                                 <li>Reflexões Diárias</li>
-                                <li>Diário para desenvolvimento pessoal</li>
-                                <li>Conquistas para decorar seu perfil</li>
+                                <li>Diários da trilha de jogos</li>
                                 <li>Acesso limitado a artigos</li>
-                                <li>Limite de 5 sessões com psicólogos</li>
+                                <li>Vitrine de psicólogas</li>
+                                <li>Criação limitada de notas pessoais</li>
                             </ul>
                         </div>
                         <div className="plan-column">
-                            <h3>Avançado</h3>
-                            <p className="price">R$ 29<small className="text-body-secondary fw-light">/mês</small></p>
+                            <h3>Premium</h3>
+                            <p className="price">R$ 29,90<small className="text-body-secondary fw-light">/mês</small></p>
                             <p>Funcionalidades Inclusas</p>
                             <div className="product-icon">Plano Mensal</div>
                             <button className="btn-principal">Quero!</button>
                             <ul className="lista-funcionalidades">
                                 <li>Tudo do plano gratuito</li>
-                                <li>Possibilidade de criar múltiplos diários</li>
-                                <li>Artigos e conteúdos personalizados com base no diário</li>
-                                <li>Temas de exclusivos de escrita</li>
-                                <li>20 Sessões com psicólogas</li>
-                                <li>Suporte com prioridade</li>
+                                <li>Artigos e conteúdos personalizados ilimitados</li>
+                                <li>Temas exclusivos de escrita</li>
+                                <li>Criação ilimitada de notas pessoais</li>
                             </ul>
                         </div>
 
                         <div className="plan-column">
                             <h3>Profissional</h3>
-                            <p className="price">R$ 280<small className="text-body-secondary fw-light">/ano</small></p>
+                            <p className="price">R$ 299<small className="text-body-secondary fw-light">/ano</small></p>
                             <p>Funcionalidades Inclusas</p>
                             <div className="product-icon">Plano Anual</div>
                             <button className="btn-principal">Fale conosco</button>
                             <ul className="lista-funcionalidades">
                                 <li>Tudo dos planos anteriores </li>
-                                <li>Conteúdo distribuído com antecedência <span className="new-badge">Exclusivo</span></li>
-                                <li>Mentoria exclusiva <span className="new-badge">Exclusivo</span></li>
-                                <li>Suporte Personalizado <span className="new-badge">Exclusivo</span></li>
-                                <li>Sessões ilimitadas com psicólogas <span className="new-badge">Exclusivo</span></li>
+                                <li>+ meses gratuitos de desconto <span className="new-badge">Exclusivo</span></li>
                             </ul>
                         </div>
                     </div> </p>
@@ -64,4 +60,4 @@ function Planos() {
     )
 };
 
-export default Planos;
+export default Planos;
