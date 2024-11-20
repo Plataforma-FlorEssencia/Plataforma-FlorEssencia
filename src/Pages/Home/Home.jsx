@@ -18,7 +18,7 @@ function Home() {
             <Hero />
 
             <div className="funcionalidades">
-                <h2>O que oferecemos.</h2>
+                <h2>O que oferecemos</h2>
 
                 <div className="func-item">
                     <img src={iconeAtividades} alt="Ícone de atividades" className="icone" />
@@ -32,7 +32,7 @@ function Home() {
                 <div className="func-item-invertido">
                     <div className="func-info">
                         <h3 className="diario-title">Diário</h3>
-                        <p>Espaço privado e seguro para registro emocional, protegido pela LGPD.</p>
+                        <p>Espaço privado e seguro para registro emocional, protegido pela Lei Geral de Proteção de Dados.</p>
                     </div>
                     <img src={iconeDiario} alt="Ícone de diário" className="icone" />
 
@@ -66,7 +66,7 @@ function Home() {
 
 
             <div className="planos" id="plans">
-                <h1>Confira nossos Planos</h1>
+                <h1>Que tal turbinar seu desenvolvimento?</h1>
                 {/* <img src="planos.png" alt="" /> */}
                 <PricingTable />
             </div>

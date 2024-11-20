@@ -91,6 +91,7 @@ body {
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     text-align: center; /* Centraliza o texto no h1 */
     padding: 20px;
+    padding-top: 30px;
   }
   
   .planos img {
@@ -102,19 +103,18 @@ body {
 
 
 .container-video {
+    background: linear-gradient(90deg, #E91E63, #FF4081);
     background-color: white;
-    padding: 32px 100px;
+    padding: 0 100px;
     text-align: center;
 
 }
 
 .video {
-    background: linear-gradient(90deg, #E91E63, #FF4081);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 64px;
-    border-radius: 20px;
     height: 60vh;
 }
 
