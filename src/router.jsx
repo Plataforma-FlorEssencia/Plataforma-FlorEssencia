@@ -14,6 +14,7 @@ import TesteAutoEstima04 from './Pages/TesteAutoEstima/TesteAutoEstima04'
 import Profile from './Pages/Profile/Profile'
 import Planos from './Pages/Planos/Planos'
 import Escrita from './Pages/Escrita/Escrita'
+import MemoryGame from './Pages/Jogos/MemoryGame/MemoryGame'
 
 
 function RouterApp() {
@@ -38,6 +39,8 @@ function RouterApp() {
                 <Route path="/Leitura" element={<Leitura />}>Leitura </Route>
                 <Route path="/Planos" element={<Planos />}>Planos </Route>
                 <Route path="/Escrita" element={<Escrita />}>Escrita </Route>
+
+                <Route path="/MemoryGame" element={<MemoryGame />}>MemoryGame </Route>
             </Routes>
         </Router>
     )
