@@ -66,7 +66,7 @@ const Sidebar = () => {
                     <li className="sidebar-item">
                         <a href="/Profile" className="sidebar-link">
                             <FaUser className="icon" />
-                            <span>Profile</span>
+                            <span>Perfil</span>
                         </a>
                     </li>
                     

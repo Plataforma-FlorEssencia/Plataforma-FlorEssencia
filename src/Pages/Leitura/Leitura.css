@@ -82,8 +82,8 @@
 }
 
 .slick-slider {
-  width: 100%;
-  max-width: 1200px; /* Largura máxima do carrossel */
+  /* width: 100%; */
+  width: 800px; /* Largura máxima do carrossel */
   margin: 0 auto;
 }
 
@@ -126,19 +126,19 @@
 }
 
 .bloco1 {
-  background-color: #26a69a; /* Cor sólida ou imagem */
+  background-image: url("livro1.png");
 }
 
 .bloco2 {
-  background-color: #00897b;
+  background-image: url("livro1.png");
 }
 
 .bloco3 {
-  background-color: #ffa726;
+  background-image: url("livro1.png");
 }
 
 .bloco4 {
-  background-color: #ff7043;
+  background-image: url("livro1.png");
 }
 
 /* Acervo */
@@ -148,17 +148,17 @@
 }
 
 .capa1 {
-  background-image: url("/livro1.png");
+  background-image: url("livro1.png");
 }
 
 .capa2 {
-  background-image: url("/livro2.png");
+  background-image: url("livro1.png");
 }
 
 .capa3 {
-  background-image: url("/livro3.png");
+  background-image: url("livro1.png");
 }
 
 .capa4 {
-  background-image: url("/livro4.png");
+  background-image: url("livro1.png");
 }

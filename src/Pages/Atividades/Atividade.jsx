@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
 import SideBar from "../../components/SideBar/SideBar";
+import ModalAtividades from './ModalAtividades'; // Importe o componente atualizado do modal
 import { OverlayTrigger, Popover, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Atividade.css';
 
 function Atividade() {
+  const [isModalOpen, setModalOpen] = useState(false); // Estado para controlar o modal
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   const gridItems = [
     { id: 1, row: 1, column: 51, link: '/pagina1' },
     { id: 2, row: 2, column: 52, link: '/pagina2' },
@@ -40,8 +51,10 @@ function Atividade() {
 
         <div className="reflexao-dia">
           <h2 className="tag">Reflexão do Dia!</h2>
-          <p>O que me faz feliz?</p>
-          <button className='btn btn-pink btn-lg mt-2'>Vamos lá!</button>
+          <p></p>
+          <button className='btn btn-pink btn-lg mt-2' onClick={handleOpenModal}>
+            Vamos lá!
+          </button>
         </div>
 
         <div className="grid-container">
@@ -73,6 +86,8 @@ function Atividade() {
           ))}
         </div>
       </div>
+
+      {isModalOpen && <ModalAtividades onClose={handleCloseModal} />}
     </div>
   );
 }
