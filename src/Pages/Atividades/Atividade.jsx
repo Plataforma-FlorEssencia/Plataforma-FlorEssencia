@@ -17,7 +17,7 @@ function Atividade() {
   };
 
   const gridItems = [
-    { id: 1, row: 1, column: 51, link: '/pagina1' },
+    { id: 1, row: 1, column: 51, link: '/MemoryGame' },
     { id: 2, row: 2, column: 52, link: '/pagina2' },
     { id: 3, row: 3, column: 53, link: '/pagina3' },
     { id: 4, row: 4, column: 52, link: '/pagina4' },

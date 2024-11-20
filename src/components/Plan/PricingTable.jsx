@@ -1,5 +1,4 @@
 import React from 'react';
-import './PricingTable.css';
 
 const PricingTable = () => {
     return (
@@ -29,7 +28,7 @@ const PricingTable = () => {
                             { plan: "Profissional", price: "R$299", sessions: "Tudo dos planos anteriores ", resources: "mais", support: "2 meses gratuitos de desconto", button: "Entrar em contato", btnClass: "btn-pink", highlight: true }
                         ].map((option, idx) => (
                             <div className="col" key={idx}>
-                                <div className={`card mb-4 rounded-3 shadow-sm ${option.highlight ? "border" : ""}`}>
+                                <div className={`cards mb-4 rounded-3 shadow-sm ${option.highlight ? "border" : ""}`}>
                                     <div className={`card-header py-3 ${option.highlight ? "text-bg border" : ""}`}>
                                         <h4 className="my-0 fw-normal">{option.plan}</h4>
                                     </div>

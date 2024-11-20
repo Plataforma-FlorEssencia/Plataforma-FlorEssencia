@@ -15,6 +15,7 @@ import Profile from './Pages/Profile/Profile'
 import Planos from './Pages/Planos/Planos'
 import Escrita from './Pages/Escrita/Escrita'
 import MemoryGame from './Pages/Jogos/MemoryGame/MemoryGame'
+import MemoryGameTutorial from './Pages/Jogos/MemoryGame/MemoryGameTutorial'
 
 
 function RouterApp() {
@@ -41,6 +42,8 @@ function RouterApp() {
                 <Route path="/Escrita" element={<Escrita />}>Escrita </Route>
 
                 <Route path="/MemoryGame" element={<MemoryGame />}>MemoryGame </Route>
+                <Route path="/MemoryGameTutorial" element={<MemoryGameTutorial />}>MemoryGame </Route>
+
             </Routes>
         </Router>
     )
