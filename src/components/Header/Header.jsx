@@ -26,11 +26,11 @@ function Header() {
                     <Nav className='ms-auto container-buttons-header'>
                         <Link to="/login"><UniversalButton id="button-login"
                             classeEstilo="rosa_borda"
-                            Btn="Login" /></Link>
+                            Btn="Entrar" /></Link>
                         <Link to="/Register">
                             <UniversalButton
                                 classeEstilo="rosa"
-                                Btn="Cadastra-se" /></Link>
+                                Btn="Cadastrar-se" /></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
