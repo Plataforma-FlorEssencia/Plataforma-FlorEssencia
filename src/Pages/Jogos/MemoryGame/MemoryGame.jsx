@@ -3,26 +3,26 @@ import './MemoryGame.css';
 import { useNavigate } from 'react-router-dom'; // Importa o hook para navegação
 
 // Importação direta das imagens
-import beth from './assets/beth.png';
-import jerry from './assets/jerry.png';
-import jessica from './assets/jessica.png';
-import morty from './assets/morty.png';
-import pessoaPassaro from './assets/pessoa-passaro.png';
+import lideranca from './assets/lideranca.png';
+import coragem from './assets/coragem.png';
+import empatia from './assets/empatia.png';
+import vulnerabilidade from './assets/vulnerabilidade.png';
+import pessoaPassaro from './assets/liberdade.png';
 
 const images = {
-  beth,
-  jerry,
-  jessica,
-  morty,
+  lideranca,
+  coragem,
+  empatia,
+  vulnerabilidade,
   'pessoa-passaro': pessoaPassaro,
 };
 
 const activityDescriptions = {
-  beth: { name: 'Beth', description: 'Beth é sobre confiança e liderança.' },
-  jerry: { name: 'Jerry', description: 'Jerry simboliza a importância da vulnerabilidade.' },
-  jessica: { name: 'Jessica', description: 'Jessica representa a empatia e o cuidado.' },
-  morty: { name: 'Morty', description: 'Morty enfatiza coragem em situações adversas.' },
-  'pessoa-passaro': { name: 'Pessoa-Pássaro', description: 'Pessoa-Pássaro é sobre liberdade e autoexpressão.' },
+  lideranca: { name: 'Confiança', description: 'Confiança é sobre acreditar em si mesmo e em suas capacidades.' },
+  coragem: { name: 'Coragem', description: 'Coragem simboliza a importância da vulnerabilidade.' },
+  empatia: { name: 'Empatia', description: 'Empatia representa o cuidado e compreensão com o próximo.' },
+  vulnerabilidade: { name: 'Vulnerabilidade', description: 'Vulnerabilidade simboliza a importância de ser genuíno e honesto.' },
+  'pessoa-passaro': { name: 'Liberdade ', description: 'Liberdade é sobre autoexpressão e autenticidade.' },
 };
 
 const characters = Object.keys(images);
@@ -132,7 +132,7 @@ const MemoryGame = () => {
 
   // Função para encerrar a atividade
   const handleEndActivity = () => {
-    navigate('/next-activity'); // Redireciona para a próxima atividade (alterar o caminho conforme necessário)
+    navigate('/Atividade'); // Redireciona para a próxima atividade (alterar o caminho conforme necessário)
   };
 
   return (
@@ -146,9 +146,8 @@ const MemoryGame = () => {
         {cards.map((card) => (
           <div
             key={card.id}
-            className={`card ${card.isRevealed ? 'reveal-card' : ''} ${
-              disabledCards.includes(card.id) ? 'disabled-card' : ''
-            }`}
+            className={`card ${card.isRevealed ? 'reveal-card' : ''} ${disabledCards.includes(card.id) ? 'disabled-card' : ''
+              }`}
             onClick={() => revealCard(card.id)}
           >
             <div

@@ -125,8 +125,13 @@
   background-position: center;
 }
 
+.bloco1, .bloco2, .bloco3, .bloco4 {
+  cursor: pointer;
+}
+
 .bloco1 {
-  background-image: url("livro1.png");
+  background-image: url("livroLobos.png");
+  background-size: cover;
 }
 
 .bloco2 {
@@ -152,7 +157,7 @@
 }
 
 .capa2 {
-  background-image: url("livro1.png");
+  background-image: url("livroLobos.png");
 }
 
 .capa3 {
@@ -162,3 +167,4 @@
 .capa4 {
   background-image: url("livro1.png");
 }
+
