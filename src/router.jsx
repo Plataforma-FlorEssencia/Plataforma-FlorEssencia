@@ -23,6 +23,8 @@ function RouterApp() {
     return (
         <Router>
             <Routes>
+                <Route path="/Plataforma-FlorEssencia/*" element={<Home />} />
+
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />}>Login</Route>
                 <Route path="/Register" element={<Register />}>Register</Route>
