@@ -7,8 +7,7 @@ export default defineConfig({
   server: {
     host: true, // ou coloque '0.0.0.0'
     port: 5173, // você pode alterar para qualquer porta disponível
-  },
-  base:"/Plataforma-FlorEssencia"
+  }
 });
 
 
