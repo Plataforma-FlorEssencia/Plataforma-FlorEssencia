@@ -57,7 +57,7 @@ function ModalAtividades({ onClose }) {
               className="modal-simple-button"
               onClick={onClose} 
             >
-              Continuar
+              Continuar 
             </button>
           </div>
         )}
