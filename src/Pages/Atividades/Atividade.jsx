@@ -17,12 +17,12 @@ function Atividade() {
   };
 
   const gridItems = [
-    { id: 1, row: 1, column: 51, link: '/MemoryGame' },
-    { id: 2, row: 2, column: 52, link: '/MemoryGame' },
-    { id: 3, row: 3, column: 53, link: '/MemoryGame' },
-    { id: 4, row: 4, column: 52, link: '/MemoryGame' },
-    { id: 5, row: 5, column: 51, link: '/MemoryGame' },
-    { id: 6, row: 6, column: 52, link: '/MemoryGame' },
+    { id: 1, row: 1, column: 51, link: '/Plataforma-FlorEssencia/MemoryGame' },
+    { id: 2, row: 2, column: 52, link: '/Plataforma-FlorEssencia/MemoryGame' },
+    { id: 3, row: 3, column: 53, link: '/Plataforma-FlorEssencia/MemoryGame' },
+    { id: 4, row: 4, column: 52, link: '/Plataforma-FlorEssencia/MemoryGame' },
+    { id: 5, row: 5, column: 51, link: '/Plataforma-FlorEssencia/MemoryGame' },
+    { id: 6, row: 6, column: 52, link: '/Plataforma-FlorEssencia/MemoryGame' },
   ];
 
   const renderPopover = (item) => (
@@ -75,7 +75,7 @@ function Atividade() {
                   aria-label={`Atividade ${item.id}`}
                 >
                   <img
-                    src="/vasinho.svg"
+                    src="vasinho.svg"
                     alt={`Ícone de vaso para a atividade ${item.id}`}
                     width="80"
                     height="80"

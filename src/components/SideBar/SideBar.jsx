@@ -40,31 +40,31 @@ const Sidebar = () => {
                 </div>
                 <ul className="sidebar-nav">
                     <li className="sidebar-item">
-                        <a href="/Atividade" className="sidebar-link" title="Atividades">
+                        <a href="/Plataforma-FlorEssencia/Atividade" className="sidebar-link" title="Atividades">
                             <FaHome className="icon" />
                             <span>Atividade</span>
                         </a>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Escrita" className="sidebar-link" >
+                        <a href="/Plataforma-FlorEssencia/Escrita" className="sidebar-link" >
                             <FaPencilAlt className="icon" />
                             <span>Escrita</span>
                         </a>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Leitura" className="sidebar-link">
+                        <a href="/Plataforma-FlorEssencia/Leitura" className="sidebar-link">
                             <FaBook className="icon" />
                             <span>Leitura</span>
                         </a>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Planos" className="sidebar-link">
+                        <a href="/Plataforma-FlorEssencia/Planos" className="sidebar-link">
                             <RiPlantFill className="icon" />
                             <span>Planos</span>
                         </a>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Profile" className="sidebar-link">
+                        <a href="/Plataforma-FlorEssencia/Profile" className="sidebar-link">
                             <FaUser className="icon" />
                             <span>Perfil</span>
                         </a>

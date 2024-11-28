@@ -21,30 +21,25 @@ import MemoryGameTutorial from './Pages/Jogos/MemoryGame/MemoryGameTutorial'
 function RouterApp() {
 
     return (
-        <Router>
+        <Router basename="/Plataforma-FlorEssencia">
             <Routes>
-                
                 <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />}>Login</Route>
-                <Route path="/Register" element={<Register />}>Register</Route>
-                <Route path="/About" element={<About />}>About</Route>
-                <Route path="/ContactUs" element={<ContactUs />}>ContactUs</Route>
-                <Route path="/Atividade" element={<Atividade />}>Atividade</Route>
-                <Route path="/ShowCase" element={<ShowCase />}>ShowCase</Route>
-
-                <Route path="/TesteAutoEstima01" element={<TesteAutoEstima01 />}>TesteAutoEstima01</Route>
-                <Route path="/TesteAutoEstima02" element={<TesteAutoEstima02 />}>TesteAutoEstima02</Route>
-                <Route path="/TesteAutoEstima03" element={<TesteAutoEstima03 />}>TesteAutoEstima03</Route>
-                <Route path="/TesteAutoEstima04" element={<TesteAutoEstima04 />}>TesteAutoEstima04</Route>
-
-                <Route path="/Profile" element={<Profile />}>Profile</Route>
-                <Route path="/Leitura" element={<Leitura />}>Leitura </Route>
-                <Route path="/Planos" element={<Planos />}>Planos </Route>
-                <Route path="/Escrita" element={<Escrita />}>Escrita </Route>
-
-                <Route path="/MemoryGame" element={<MemoryGame />}>MemoryGame </Route>
-                <Route path="/MemoryGameTutorial" element={<MemoryGameTutorial />}>MemoryGame </Route>
-
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contactus" element={<ContactUs />} />
+                <Route path="/atividade" element={<Atividade />} />
+                <Route path="/showcase" element={<ShowCase />} />
+                <Route path="/testeautoestima01" element={<TesteAutoEstima01 />} />
+                <Route path="/testeautoestima02" element={<TesteAutoEstima02 />} />
+                <Route path="/testeautoestima03" element={<TesteAutoEstima03 />} />
+                <Route path="/testeautoestima04" element={<TesteAutoEstima04 />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/leitura" element={<Leitura />} />
+                <Route path="/planos" element={<Planos />} />
+                <Route path="/escrita" element={<Escrita />} />
+                <Route path="/memorygame" element={<MemoryGame />} />
+                <Route path="/memorygametutorial" element={<MemoryGameTutorial />} />
             </Routes>
         </Router>
     )

@@ -11,7 +11,7 @@ function TesteAutoEstima04() {
                 <br/>
                 <p>Aguarde alguns instantes enquanto preparamos uma jornada só sua...</p>
             </div>
-            <a href="/Atividade">
+            <a href="/Plataforma-FlorEssencia/Atividade">
                 <button className="continue-button">Continuar</button>
             </a>
         </div>

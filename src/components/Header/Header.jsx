@@ -17,11 +17,11 @@ function Header() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto brand">
                         <Nav.Link href="/">Início</Nav.Link>
-                        <Nav.Link href="/#plans">Planos</Nav.Link>
-                        <Nav.Link href=" /#feedback">Depoimentos</Nav.Link>
-                        <Nav.Link href="/About">Sobre</Nav.Link>
-                        <Nav.Link href="/ContactUs">Fale conosco</Nav.Link>
-                        <Nav.Link href="/ShowCase">Consultas</Nav.Link>
+                        <Nav.Link href="/Plataforma-FlorEssencia/#plans">Planos</Nav.Link>
+                        <Nav.Link href=" /Plataforma-FlorEssencia/#feedback">Depoimentos</Nav.Link>
+                        <Nav.Link href="/Plataforma-FlorEssencia/About">Sobre</Nav.Link>
+                        <Nav.Link href="/Plataforma-FlorEssencia/ContactUs">Fale conosco</Nav.Link>
+                        <Nav.Link href="/Plataforma-FlorEssencia/ShowCase">Consultas</Nav.Link>
                     </Nav>
                     <Nav className='ms-auto container-buttons-header'>
                         <Link to="/login"><UniversalButton id="button-login"

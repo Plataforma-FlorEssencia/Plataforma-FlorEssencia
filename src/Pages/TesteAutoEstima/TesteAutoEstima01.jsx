@@ -7,7 +7,7 @@ function TesteAutoEstima01() {
                 <h1>Olá, Adriana!</h1>
             </div>
 
-            <a href="/TesteAutoEstima02">
+            <a href="/Plataforma-FlorEssencia/TesteAutoEstima02">
                 <button className="continue-button">Continuar</button>
             </a>
         </div>
