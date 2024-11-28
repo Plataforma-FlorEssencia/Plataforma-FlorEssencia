@@ -21,7 +21,7 @@ import MemoryGameTutorial from './Pages/Jogos/MemoryGame/MemoryGameTutorial'
 function RouterApp() {
 
     return (
-        <Router basename="/Plataforma-FlorEssencia">
+        <Router basename="/Plataforma-FlorEssencia/">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
