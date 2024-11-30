@@ -17,6 +17,8 @@ import Escrita from './Pages/Escrita/Escrita'
 import MemoryGame from './Pages/Jogos/MemoryGame/MemoryGame'
 import MemoryGameTutorial from './Pages/Jogos/MemoryGame/MemoryGameTutorial'
 
+import AlbumAutoConhecimento from './Pages/AlbumReflexao/AlbumAtuoConhecimento/AutoConhecimento'
+
 
 function RouterApp() {
 
@@ -45,6 +47,8 @@ function RouterApp() {
                 <Route path="/MemoryGame" element={<MemoryGame />}>MemoryGame </Route>
                 <Route path="/MemoryGameTutorial" element={<MemoryGameTutorial />}>MemoryGame </Route>
 
+                <Route path="/AlbumAutoConhecimento" element={<AlbumAutoConhecimento />} />
+                
             </Routes>
         </Router>
     )
