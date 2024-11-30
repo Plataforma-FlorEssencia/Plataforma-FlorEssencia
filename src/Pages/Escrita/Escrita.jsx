@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
 import SideBar from "../../components/SideBar/SideBar";
-import { FaBook, FaLock } from 'react-icons/fa'; // Importa os ícones
+import ModalAtividades from "../Atividades/ModalAtividades";
+import { FaBook, FaLock, FaArrowRight, FaSearch, FaPlus } from 'react-icons/fa';
 import './Escrita.css';
 
 function Escrita() {
-    // State para controlar visibilidade do dropdown
-    const [showDropdown, setShowDropdown] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false); // Dropdown
+    const [showModal, setShowModal] = useState(false); // Modal
+    const [temaReflexao, setTemaReflexao] = useState("O que me faz feliz?"); // Tema da reflexão
 
-    // Função para alternar o dropdown
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
+    };
+
+    const openModal = (tema) => {
+        setTemaReflexao(tema); 
+        setShowModal(true); 
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
     };
 
     return (
@@ -23,11 +33,13 @@ function Escrita() {
                         <h3>Reflexão do dia</h3>
                         <div className="input-group">
                             <input type="text" placeholder="O que me faz feliz?" />
-                            <button>➡️</button>
+                            <button onClick={() => openModal("O que me faz feliz?")}>
+                                <FaArrowRight size={20} />
+                            </button>
                         </div>
                         <button 
                             className="album-reflexoes" 
-                            onClick={toggleDropdown} // Adiciona o evento de clique
+                            onClick={toggleDropdown}
                         >
                             ÁLBUM DE REFLEXÕES
                         </button>
@@ -36,10 +48,10 @@ function Escrita() {
                         {showDropdown && (
                             <div className="dropdown">
                                 <ul>
-                                    <li>Reflexão Pessoal</li>
-                                    <li>Objetivos e Metas</li>
-                                    <li>Gratidão</li>
-                                    <li>Desafios Superados</li>
+                                    <li onClick={() => openModal("Reflexão Pessoal")}>Reflexão Pessoal</li>
+                                    <li onClick={() => openModal("Objetivos e Metas")}>Objetivos e Metas</li>
+                                    <li onClick={() => openModal("Gratidão")}>Gratidão</li>
+                                    <li onClick={() => openModal("Desafios Superados")}>Desafios Superados</li>
                                 </ul>
                             </div>
                         )}
@@ -65,7 +77,7 @@ function Escrita() {
                             </div>
                             {/* Botão para criar novo diário */}
                             <div className="diario-item novo">
-                                +
+                                <FaPlus size={40} color="#00a99d" />
                             </div>
                         </div>
                     </div>
@@ -76,7 +88,9 @@ function Escrita() {
                     <h3>Histórico</h3>
                     <div className="search-group">
                         <input type="text" placeholder="Pesquisar" />
-                        <button>🔍</button>
+                        <button>
+                            <FaSearch size={20} />
+                        </button>
                     </div>
                     <div className="historico-list">
                         <p>Sem dados criados ainda</p>
@@ -87,6 +101,9 @@ function Escrita() {
                     </div>
                 </div>
             </div>
+
+            {/* Modal */}
+            {showModal && <ModalAtividades onClose={closeModal} tema={temaReflexao} />}
         </div>
     );
 }

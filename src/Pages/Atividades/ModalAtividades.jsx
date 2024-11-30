@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ModalAtividades.css';
 
-function ModalAtividades({ onClose }) {
+function ModalAtividades({ onClose, tema }) {
   const [step, setStep] = useState(1); // Controla qual tela do modal será exibida
 
   const handleNextStep = () => {
@@ -17,7 +17,7 @@ function ModalAtividades({ onClose }) {
         {step === 1 && (
           <div>
             <h2 className="modal-title">O tema de hoje é...</h2>
-            <h2 className="reflexao-texto">O que me faz feliz?</h2>
+            <h2 className="reflexao-texto">{tema}</h2>
             <button
               className="modal-simple-button"
               onClick={handleNextStep}
@@ -30,7 +30,7 @@ function ModalAtividades({ onClose }) {
         {/* Tela 2 */}
         {step === 2 && (
           <div>
-            <h2 className="reflexao-texto">O que me faz feliz?</h2>
+            <h2 className="reflexao-texto">{tema}</h2>
             <textarea
               className="modal-textarea"
               rows="10"
