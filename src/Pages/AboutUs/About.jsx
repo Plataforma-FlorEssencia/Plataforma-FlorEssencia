@@ -46,7 +46,7 @@ function About() {
                             linkedin="https://linkedin.com/in/lucas-santos"
                             github="https://github.com/LucasAlexSant" /></div>
 
-                        <div className="team"><Team imagem={adrielle} name="Adrielle Mercez"
+                        <div className="team"><Team imagem={adrielle} name="Adrielle Merces"
                             role="Scrum Master Desenvolvedora Back-End"
                             linkedin="https://linkedin.com/in/lucas-santos"
                             github="https://github.com/LucasAlexSant" /></div>

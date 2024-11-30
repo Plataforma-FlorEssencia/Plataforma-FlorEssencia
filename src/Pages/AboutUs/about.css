@@ -37,7 +37,10 @@ body{
 .container-one p {
     margin-top: 32px;
 }
-
+.nosso-objetivo {
+    width: 1200px; 
+    
+}
 .container-one h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -45,10 +48,9 @@ body{
 }
 
 .container-one {
-    gap: 200px;
     margin-top: 100px;
     /* border: 1px solid; */
-    max-width: 800px;
+    max-width: 1000px;
     
 }
 
@@ -100,4 +102,52 @@ body{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    
+    .developers-left,
+    .developers-right {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
 
+    .container-team {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .developers-left,
+    .developers-right {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .container-team {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Esconde as imagens da folha e da rosa em telas menores */
+    .folha-about,
+    .flor,
+    .nosso-objetivo
+    {
+        display: none;
+    }
+
+    .nosso-objetivo {
+        width: 70%; 
+        
+    }
+    .nosso-time h1{
+        font-size: 1.5rem;
+    }
+}

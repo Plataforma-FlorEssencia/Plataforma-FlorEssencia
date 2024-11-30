@@ -81,7 +81,7 @@
     padding: 10px;
     position: absolute;
     z-index: 10; 
-    width: 400px;
+    width: 450px;
 }
 
 .dropdown ul {
@@ -205,5 +205,9 @@
     .right-section {
         width: 100%;
         max-width: 600px;
+    }
+
+    .dropdown {
+        width: 310px;
     }
 }

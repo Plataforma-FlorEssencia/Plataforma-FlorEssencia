@@ -46,3 +46,38 @@
   font-size: 1.2rem;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column; 
+    width: 100vw; 
+    padding: 15px; 
+  }
+
+  .profile-image img {
+    width: 150px; 
+    height: auto;
+  }
+
+  .profile-info {
+    margin-left: 0; 
+    margin-top: 10px; 
+    text-align: center; 
+  }
+
+  .name {
+    font-size: 1.3rem; 
+  }
+
+  .role {
+    font-size: 1.2rem; 
+  }
+
+  .social-icons {
+    justify-content: center; 
+  }
+
+  .social-icons .icon {
+    font-size: 40px; 
+  }
+}

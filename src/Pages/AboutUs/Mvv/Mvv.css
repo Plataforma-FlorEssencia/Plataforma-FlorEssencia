@@ -10,7 +10,6 @@
 }
 
 .about-item {
-    margin: 20px;
     border-radius: 20px;
     padding: 15px;
     font-size: 20px;
@@ -54,7 +53,8 @@
     }
 
     .about-item {
-        max-width: 100%;
+        max-width: 90%;
+        height: auto;
         margin-bottom: 20px;
     }
 }

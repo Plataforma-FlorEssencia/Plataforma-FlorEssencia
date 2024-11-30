@@ -1,44 +1,62 @@
 import React, { useState } from 'react';
 import SideBar from "../../components/SideBar/SideBar";
-import ModalAtividades from "../Atividades/ModalAtividades";
+import ModalAtividades from "../Atividades/ModalAtividades"; // Importando ModalAtividades
+import ModalMensagem from "../../components/Modal/Modal"; // Importe o componente do modal
 import { FaBook, FaLock, FaArrowRight, FaSearch, FaPlus } from 'react-icons/fa';
 import './Escrita.css';
 
 function Escrita() {
     const [showDropdown, setShowDropdown] = useState(false); // Dropdown
-    const [showModal, setShowModal] = useState(false); // Modal
+    const [showModalAtividade, setShowModalAtividade] = useState(false); // Modal de Atividade
+    const [showModalMensagem, setShowModalMensagem] = useState(false); // Modal de Mensagem
     const [temaReflexao, setTemaReflexao] = useState("O que me faz feliz?"); // Tema da reflexão
+    const [modalMessage, setModalMessage] = useState(""); // Mensagem do ModalMensagem
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
     };
 
-    const openModal = (tema) => {
-        setTemaReflexao(tema); 
-        setShowModal(true); 
+    const openModalAtividade = (tema) => {
+        setTemaReflexao(tema);
+        setShowModalAtividade(true);
     };
 
-    const closeModal = () => {
-        setShowModal(false);
+    const closeModalAtividade = () => {
+        setShowModalAtividade(false);
+    };
+
+    // Função para abrir o modal de mensagem ao clicar no diário bloqueado
+    const openBlockedDiaryModal = () => {
+        setModalMessage("Esse diário ainda não está liberado, complete a trilha de jogos para desbloquear esse tema.");
+        setShowModalMensagem(true);
+    };
+
+    const closeModalMensagem = () => {
+        setShowModalMensagem(false);
     };
 
     return (
         <div className="main-escrita">
             <SideBar />
             <div className="body-escrita">
-                
+
                 {/* Seção Esquerda */}
                 <div className="left-section">
                     <div className="reflexao">
                         <h3>Reflexão do dia</h3>
                         <div className="input-group">
-                            <input type="text" placeholder="O que me faz feliz?" />
-                            <button onClick={() => openModal("O que me faz feliz?")}>
+                            <input
+                                onClick={() => openModalAtividade("O que me faz feliz?")}
+                                type="text"
+                                placeholder="O que me faz feliz?"
+                                readOnly
+                            />
+                            <button onClick={() => openModalAtividade("O que me faz feliz?")}>
                                 <FaArrowRight size={20} />
                             </button>
                         </div>
-                        <button 
-                            className="album-reflexoes" 
+                        <button
+                            className="album-reflexoes"
                             onClick={toggleDropdown}
                         >
                             ÁLBUM DE REFLEXÕES
@@ -48,20 +66,20 @@ function Escrita() {
                         {showDropdown && (
                             <div className="dropdown">
                                 <ul>
-                                    <li onClick={() => openModal("Reflexão Pessoal")}>Reflexão Pessoal</li>
-                                    <li onClick={() => openModal("Objetivos e Metas")}>Objetivos e Metas</li>
-                                    <li onClick={() => openModal("Gratidão")}>Gratidão</li>
-                                    <li onClick={() => openModal("Desafios Superados")}>Desafios Superados</li>
+                                    <li >Autoconhecimento</li>
+                                    <li >Carreira</li>
+                                    <li >Gestão de tempo</li>
+                                    <li >Inteligência emocional</li>
                                 </ul>
                             </div>
                         )}
                     </div>
-                    
+
                     <div className="diarios">
                         <h3>Meus Diários</h3>
                         <div className="diarios-container">
                             {/* Diário bloqueado */}
-                            <div className="diario-item bloqueado">
+                            <div className="diario-item bloqueado" onClick={openBlockedDiaryModal}>
                                 <FaLock size={40} color="#ff0000" />
                                 <span>Soft Skills</span>
                             </div>
@@ -102,8 +120,11 @@ function Escrita() {
                 </div>
             </div>
 
-            {/* Modal */}
-            {showModal && <ModalAtividades onClose={closeModal} tema={temaReflexao} />}
+            {/* Modal Atividade */}
+            {showModalAtividade && <ModalAtividades onClose={closeModalAtividade} tema={temaReflexao} />}
+
+            {/* Modal Mensagem (diário bloqueado) */}
+            {showModalMensagem && <ModalMensagem onClose={closeModalMensagem} message={modalMessage} />}
         </div>
     );
 }

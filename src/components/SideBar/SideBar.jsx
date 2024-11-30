@@ -35,7 +35,7 @@ const Sidebar = () => {
                         <FaThLarge style={{ color: "#FFFFFF" }} />
                     </button>
                     <div className="sidebar-logo">
-                        <Link to="/">FlorEssência</Link> {/* Usando Link ao invés de <a> */}
+                        <Link>FlorEssência</Link> {/* Usando Link ao invés de <a> */}
                     </div>
                 </div>
                 <ul className="sidebar-nav">
