@@ -1,4 +1,5 @@
 import './TesteAutoEstima.css';
+import { Link } from 'react-router-dom';
 
 function TesteAutoEstima04() {
     return (
@@ -8,12 +9,12 @@ function TesteAutoEstima04() {
             </div>
             <div className="message">
                 <p>Agradecemos por responder às perguntas essenciais que guiarão sua experiência na  Floressência</p>
-                <br/>
+                <br />
                 <p>Aguarde alguns instantes enquanto preparamos uma jornada só sua...</p>
             </div>
-            <a href="/Plataforma-FlorEssencia/Atividade">
+            <Link to="/Atividade">
                 <button className="continue-button">Continuar</button>
-            </a>
+            </Link>
         </div>
     );
 }

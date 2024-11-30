@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { FaUser, FaHome, FaSignOutAlt, FaThLarge, FaPencilAlt, FaBook } from 'react-icons/fa';
 import { RiPlantFill } from "react-icons/ri";
-import { useNavigate } from 'react-router-dom'; // Importando useNavigate
+import { useNavigate, Link } from 'react-router-dom'; // Importando Link para navegação no React
 import './SideBar.css';
 
 const Sidebar = () => {
     const [showModal, setShowModal] = useState(false);
-    const navigate = useNavigate(); // Definindo a função navigate
+    const navigate = useNavigate(); // Função para navegação
 
     const handleCloseModal = () => setShowModal(false);
     const handleShowModal = () => setShowModal(true);
@@ -31,45 +31,44 @@ const Sidebar = () => {
         <div className="wrapper">
             <aside id="sidebar">
                 <div className="d-flex">
-                    <button className="toggle-btn" type="button" aria-label="Toggle Sidebar">
+                    <button className="toggle-btn" type="button" aria-label="Toggle Sidebar" aria-expanded="false">
                         <FaThLarge style={{ color: "#FFFFFF" }} />
                     </button>
                     <div className="sidebar-logo">
-                        <a href="#">FlorEssência</a>
+                        <Link to="/">FlorEssência</Link> {/* Usando Link ao invés de <a> */}
                     </div>
                 </div>
                 <ul className="sidebar-nav">
                     <li className="sidebar-item">
-                        <a href="/Plataforma-FlorEssencia/Atividade" className="sidebar-link" title="Atividades">
+                        <Link to="/Atividade" className="sidebar-link" title="Atividades">
                             <FaHome className="icon" />
                             <span>Atividade</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Plataforma-FlorEssencia/Escrita" className="sidebar-link" >
+                        <Link to="/Escrita" className="sidebar-link">
                             <FaPencilAlt className="icon" />
                             <span>Escrita</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Plataforma-FlorEssencia/Leitura" className="sidebar-link">
+                        <Link to="/Leitura" className="sidebar-link">
                             <FaBook className="icon" />
                             <span>Leitura</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Plataforma-FlorEssencia/Planos" className="sidebar-link">
+                        <Link to="/Planos" className="sidebar-link">
                             <RiPlantFill className="icon" />
                             <span>Planos</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="sidebar-item">
-                        <a href="/Plataforma-FlorEssencia/Profile" className="sidebar-link">
+                        <Link to="/Profile" className="sidebar-link">
                             <FaUser className="icon" />
                             <span>Perfil</span>
-                        </a>
+                        </Link>
                     </li>
-                    
                 </ul>
                 <div className="sidebar-footer">
                     <a href="#" className="sidebar-link" onClick={(e) => { e.preventDefault(); handleShowModal(); }}>
@@ -94,7 +93,6 @@ const Sidebar = () => {
                     <Button variant="secondary" onClick={handleCloseModal}>
                         Fechar
                     </Button>
-
                 </Modal.Footer>
             </Modal>
         </div>

@@ -10,10 +10,9 @@
 
 .wrapper {
     display: flex;
-    height: 100vh;
-    transition: all 0.35s ease-in-out;
+    min-height: 100vh;
     background-color: #fafbfe;
-    margin-left: 90px; /* Ajusta a margem para evitar sobreposição */
+    flex-direction: column;
 }
 
 .wrapper.sidebar-expanded {
@@ -22,12 +21,12 @@
 
 #sidebar {
     position: fixed; /* Deixa a sidebar fixa */
-    top: 0;
+    top: 0; /* Garante que a sidebar começa do topo */
     left: 0;
     width: 90px;
     min-width: 70px;
-    height: 100vh; /* Faz a sidebar ocupar toda a altura da tela */
-    z-index: 1000;
+    height: 100vh; /* Sidebar ocupa toda a altura da tela */
+    z-index: 10000; /* Garante que a sidebar fique sobre outros elementos */
     transition: all .25s ease-in-out;
     background: linear-gradient(to bottom, #EB5694, #e6367f);
     display: flex;
@@ -91,6 +90,41 @@ a.sidebar-link:hover {
 
 .sidebar-footer {
     margin-top: auto;
-    
 }
 
+@media screen and (max-width: 768px) {
+    #sidebar {
+        position: fixed;
+        width: 100vw;        
+        height: 70px;       
+        bottom: 0;          
+        left: 0;          
+        top: auto;          
+        flex-direction: row; 
+        justify-content: space-around; 
+        z-index: 10000;     
+        background: linear-gradient(to bottom, #EB5694, #e6367f); 
+    }
+
+    #sidebar .sidebar-nav {
+        flex: 1;
+        padding: 10;         /* Remove padding */
+        display: flex;      /* Exibe os itens em linha */
+        justify-content: space-around; /* Espaça os itens horizontalmente */
+    }
+
+    #sidebar .sidebar-item {
+        flex: 1;            /* Cada item ocupa o mesmo espaço */
+        text-align: center; /* Centraliza o texto dos itens */
+    }
+
+    #sidebar .sidebar-link {
+        padding: 0.625rem;  /* Ajusta padding */
+        border-left: none;  /* Remove borda lateral */
+        height: auto;       /* Ajusta a altura dos itens */
+    }
+
+    .toggle-btn {
+        display: none;      /* Esconde o botão de expandir na versão móvel */
+    }
+}

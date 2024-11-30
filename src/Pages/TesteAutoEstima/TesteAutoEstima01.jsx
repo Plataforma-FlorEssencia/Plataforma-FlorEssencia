@@ -1,4 +1,5 @@
 import './TesteAutoEstima.css';
+import { Link } from 'react-router-dom';
 
 function TesteAutoEstima01() {
     return (
@@ -7,9 +8,9 @@ function TesteAutoEstima01() {
                 <h1>Olá, Adriana!</h1>
             </div>
 
-            <a href="/Plataforma-FlorEssencia/TesteAutoEstima02">
+            <Link to="/TesteAutoEstima02">
                 <button className="continue-button">Continuar</button>
-            </a>
+            </Link>
         </div>
     );
 }

@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SideBar from "../../components/SideBar/SideBar";
+import { FaBook, FaLock } from 'react-icons/fa'; // Importa os ícones
 import './Escrita.css';
 
 function Escrita() {
+    // State para controlar visibilidade do dropdown
+    const [showDropdown, setShowDropdown] = useState(false);
+
+    // Função para alternar o dropdown
+    const toggleDropdown = () => {
+        setShowDropdown(!showDropdown);
+    };
+
     return (
         <div className="main-escrita">
             <SideBar />
@@ -16,17 +25,48 @@ function Escrita() {
                             <input type="text" placeholder="O que me faz feliz?" />
                             <button>➡️</button>
                         </div>
-                        <button className="album-reflexoes">ÁLBUM DE REFLEXÕES</button>
+                        <button 
+                            className="album-reflexoes" 
+                            onClick={toggleDropdown} // Adiciona o evento de clique
+                        >
+                            ÁLBUM DE REFLEXÕES
+                        </button>
+
+                        {/* Dropdown */}
+                        {showDropdown && (
+                            <div className="dropdown">
+                                <ul>
+                                    <li>Reflexão Pessoal</li>
+                                    <li>Objetivos e Metas</li>
+                                    <li>Gratidão</li>
+                                    <li>Desafios Superados</li>
+                                </ul>
+                            </div>
+                        )}
                     </div>
                     
                     <div className="diarios">
                         <h3>Meus Diários</h3>
                         <div className="diarios-container">
-                            <div className="diario-item pessoal">
-                                <span>Pessoal</span>
+                            {/* Diário bloqueado */}
+                            <div className="diario-item bloqueado">
+                                <FaLock size={40} color="#ff0000" />
+                                <span>Soft Skills</span>
                             </div>
-                            <div className="diario-item novo">+</div>
-                            <div className="diario-item novo">+</div>
+                            {/* Diário Gratidão */}
+                            <div className="diario-item">
+                                <FaBook size={40} color="#00a99d" />
+                                <span>Gratidão</span>
+                            </div>
+                            {/* Diário Superação */}
+                            <div className="diario-item">
+                                <FaBook size={40} color="#00a99d" />
+                                <span>Superação</span>
+                            </div>
+                            {/* Botão para criar novo diário */}
+                            <div className="diario-item novo">
+                                +
+                            </div>
                         </div>
                     </div>
                 </div>
