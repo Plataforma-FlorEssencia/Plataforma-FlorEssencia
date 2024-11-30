@@ -3,6 +3,8 @@ import SideBar from "../../components/SideBar/SideBar";
 import ModalAtividades from "../Atividades/ModalAtividades"; // Importando ModalAtividades
 import ModalMensagem from "../../components/Modal/Modal"; // Importe o componente do modal
 import { FaBook, FaLock, FaArrowRight, FaSearch, FaPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 import './Escrita.css';
 
 function Escrita() {
@@ -65,13 +67,21 @@ function Escrita() {
                         {/* Dropdown */}
                         {showDropdown && (
                             <div className="dropdown">
-                                <ul>
-                                    <li >Autoconhecimento</li>
-                                    <li >Carreira</li>
-                                    <li >Gestão de tempo</li>
-                                    <li >Inteligência emocional</li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li>
+                                    <Link to="/AlbumAutoConhecimento">Autoconhecimento</Link>
+                                </li>
+                                <li>
+                                    <Link to="/Carreira">Carreira</Link>
+                                </li>
+                                <li>
+                                    <Link to="/GestaoDeTempo">Gestão de tempo</Link>
+                                </li>
+                                <li>
+                                    <Link to="/InteligenciaEmocional">Inteligência emocional</Link>
+                                </li>
+                            </ul>
+                        </div>
                         )}
                     </div>
 
