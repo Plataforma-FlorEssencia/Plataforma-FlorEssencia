@@ -97,3 +97,13 @@
 .forms-contactUs{
     margin-top: 100px;
 }
+
+@media (max-width: 768px) {
+    .img-principal-contactUs {
+        display: none; 
+    }
+
+    .forms-contactUs {
+        margin: 20px; /* Ajuste a margem conforme necessário */
+    }
+}

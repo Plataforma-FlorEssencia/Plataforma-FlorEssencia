@@ -3,7 +3,6 @@
     justify-content: space-around;
     /* Espaça as colunas igualmente */
     align-items: flex-start;
-    padding: 20px;
     gap: 100px;
     margin: 0 auto;
     /* Centraliza o contêiner */
