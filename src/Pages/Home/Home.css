@@ -33,28 +33,20 @@ body {
     padding-left: 100px;
 }
 
-
-
 .icone {
-
-    height: 20px;
     height: 250px;
     margin-right: 80px;
-
 }
-
 
 .func-info p {
     margin: 35px 0 0 0;
     font-size: 28px;
 }
 
-
 .atividades-title {
     color: #E91E63;
     font-size: 50px;
     font-weight: bold;
-
 }
 
 .diario-title {
@@ -71,43 +63,35 @@ body {
 
 .folha {
     position: absolute;
-    /* Permite posicionar a folha livremente dentro da div .video */
     top: -200px;
-    /* Ajuste este valor para mover a folha para cima */
     left: -80px;
-    /* Ajuste este valor para mover a folha para a esquerda */
     z-index: 1;
-    /* Garante que a folha fique acima do iframe */
 }
 
 .folha img {
     width: 300px;
-    /* Ajuste o tamanho conforme necessário */
 }
 
 .planos {
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo em coluna */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto no h1 */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     padding-top: 30px;
-  }
-  
-  .planos img {
-    max-width: 100%; 
-    height: auto; 
-    margin-top: 20px; 
-    margin-bottom: 100px;
-  }
+}
 
+.planos img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
 
 .container-video {
     background: linear-gradient(90deg, #E91E63, #FF4081);
     background-color: white;
-    padding: 0 100px;
     text-align: center;
-
 }
 
 .video {
@@ -122,4 +106,54 @@ body {
     border-radius: 40px;
     transform: translateX(40px);
     border: 2px solid #f5f5f5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .funcionalidades {
+        padding: 20px;
+    }
+
+    .funcionalidades h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .func-item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .func-item-invertido {
+        padding-left: 0px;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .func-info {
+        text-align: center;
+    }
+
+    .icone {
+        margin-right: 0;
+        margin-bottom: 20px;
+        height: 180px;
+    }
+
+    .atividades-title, .diario-title, .conteudos-title {
+        font-size: 30px;
+    }
+
+    .video {
+        padding: 32px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 300px;
+        max-width: 600px; /* Limita a largura máxima do iframe */
+        transform: none; /* Remove o deslocamento */
+    }
 }
