@@ -18,6 +18,7 @@ import MemoryGame from './Pages/Jogos/MemoryGame/MemoryGame'
 import MemoryGameTutorial from './Pages/Jogos/MemoryGame/MemoryGameTutorial'
 
 import AlbumAutoConhecimento from './Pages/AlbumReflexao/AlbumAtuoConhecimento/AutoConhecimento'
+import AlbumGestaoTempo from './Pages/AlbumReflexao/AlbumGestaoTempo/GestaoTempo'
 
 
 function RouterApp() {
@@ -48,7 +49,8 @@ function RouterApp() {
                 <Route path="/MemoryGameTutorial" element={<MemoryGameTutorial />}>MemoryGame </Route>
 
                 <Route path="/AlbumAutoConhecimento" element={<AlbumAutoConhecimento />} />
-                
+                <Route path="/AlbumGestaoDeTempo" element={<AlbumGestaoTempo />} />
+
             </Routes>
         </Router>
     )

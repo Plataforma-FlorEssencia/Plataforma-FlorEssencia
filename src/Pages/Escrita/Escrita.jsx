@@ -72,13 +72,13 @@ function Escrita() {
                                     <Link to="/AlbumAutoConhecimento">Autoconhecimento</Link>
                                 </li>
                                 <li>
-                                    <Link to="/Carreira">Carreira</Link>
+                                    <Link to="/AlbumCarreira">Carreira</Link>
                                 </li>
                                 <li>
-                                    <Link to="/GestaoDeTempo">Gestão de tempo</Link>
+                                    <Link to="/AlbumGestaoDeTempo">Gestão de tempo</Link>
                                 </li>
                                 <li>
-                                    <Link to="/InteligenciaEmocional">Inteligência emocional</Link>
+                                    <Link to="/AlbumInteligenciaEmocional">Inteligência emocional</Link>
                                 </li>
                             </ul>
                         </div>
