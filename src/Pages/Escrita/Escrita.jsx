@@ -67,21 +67,21 @@ function Escrita() {
                         {/* Dropdown */}
                         {showDropdown && (
                             <div className="dropdown">
-                            <ul>
-                                <li>
-                                    <Link to="/AlbumAutoConhecimento">Autoconhecimento</Link>
-                                </li>
-                                <li>
-                                    <Link to="/AlbumCarreira">Carreira</Link>
-                                </li>
-                                <li>
-                                    <Link to="/AlbumGestaoDeTempo">Gestão de tempo</Link>
-                                </li>
-                                <li>
-                                    <Link to="/AlbumInteligenciaEmocional">Inteligência emocional</Link>
-                                </li>
-                            </ul>
-                        </div>
+                                <ul>
+                                    <li>
+                                        <Link to="/AlbumAutoConhecimento">Autoconhecimento</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/AlbumCarreira">Carreira</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/AlbumGestaoDeTempo">Gestão de tempo</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/AlbumInteligenciaEmocional">Inteligência emocional</Link>
+                                    </li>
+                                </ul>
+                            </div>
                         )}
                     </div>
 
@@ -94,15 +94,15 @@ function Escrita() {
                                 <span>Soft Skills</span>
                             </div>
                             {/* Diário Gratidão */}
-                            <div className="diario-item">
+                            <Link to="/DiarioGratidao" className="diario-item">
                                 <FaBook size={40} color="#00a99d" />
                                 <span>Gratidão</span>
-                            </div>
+                            </Link>
                             {/* Diário Superação */}
-                            <div className="diario-item">
+                            <Link to="/DiarioSuperacao" className="diario-item">
                                 <FaBook size={40} color="#00a99d" />
                                 <span>Superação</span>
-                            </div>
+                            </Link>
                             {/* Botão para criar novo diário */}
                             <div className="diario-item novo">
                                 <FaPlus size={40} color="#00a99d" />

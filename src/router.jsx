@@ -19,6 +19,11 @@ import MemoryGameTutorial from './Pages/Jogos/MemoryGame/MemoryGameTutorial'
 
 import AlbumAutoConhecimento from './Pages/AlbumReflexao/AlbumAtuoConhecimento/AutoConhecimento'
 import AlbumGestaoTempo from './Pages/AlbumReflexao/AlbumGestaoTempo/GestaoTempo'
+import AlbumCarreira from './Pages/AlbumReflexao/AlbumCarreira/AlbymCarreira'
+import AlbumInteligenciaEmocional from './Pages/AlbumReflexao/AlbumInteligenciaEmocional/AlbumInteligenciaEmocional'
+
+import DiarioSuperacao from './Pages/Diarios/DiarioSuperacao/DiarioSuperacao'
+import DiarioGratidao from './Pages/Diarios/DiarioGratidao/DiarioGratidao'
 
 
 function RouterApp() {
@@ -50,7 +55,11 @@ function RouterApp() {
 
                 <Route path="/AlbumAutoConhecimento" element={<AlbumAutoConhecimento />} />
                 <Route path="/AlbumGestaoDeTempo" element={<AlbumGestaoTempo />} />
+                <Route path="/AlbumCarreira" element={<AlbumCarreira />} />
+                <Route path="/AlbumInteligenciaEmocional" element={<AlbumInteligenciaEmocional />} />
 
+                <Route path="/DiarioSuperacao" element={<DiarioSuperacao/>}/>
+                <Route path="/DiarioGratidao" element={<DiarioGratidao/>}/>
             </Routes>
         </Router>
     )
