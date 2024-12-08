@@ -55,11 +55,18 @@
     height: 100px;
     border-radius: 50%;
     border: 4px solid #ffffff; 
-    background-image: url(/public/psicologa-ana.png);
+    background-image: url(psicologa-ana.png);
     background-size: contain; 
     background-repeat: no-repeat; 
     margin-right: 20px;
 }
+
+
+  
+  /* Tamanho ajustado para as imagens dentro da conquista */
+  .achievement img {
+    height: 80%;
+  }
 
 .profile-header h2 {
     flex-grow: 1;
@@ -111,7 +118,7 @@
 .achievement {
     width: 100px;
     height: 100px;
-    background-color: #e0e0e0;
+    
     border-radius: 8px;
 }
 

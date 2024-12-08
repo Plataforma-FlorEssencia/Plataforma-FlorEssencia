@@ -11,7 +11,7 @@ function ContactUs() {
 
             <div className="section-hero">
                 <div class="top-0 mt-4 ">
-                    <h1 class="display-12 fw-bolder text-capitalize">Compartilhe o que você pensa com a gente</h1>
+                    <h1 class="display-12 fw-bolder ">Compartilhe o que você pensa com a gente</h1>
                 </div>
             </div>
 
