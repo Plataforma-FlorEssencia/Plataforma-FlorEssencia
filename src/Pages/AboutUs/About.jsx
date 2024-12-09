@@ -43,37 +43,40 @@ function About() {
                     <div className="developers-left">
                         <div className="team"><Team imagem={ana} name="Ana Mioki"
                             role="Product Owner"
-                            linkedin="https://linkedin.com/in/lucas-santos"
-                            github="https://github.com/LucasAlexSant" /></div>
+                            linkedin="https://www.linkedin.com/in/ana-mioki/"
+                            github="https://github.com/AnaMioki" /></div>
 
                         <div className="team"><Team imagem={adrielle} name="Adrielle Merces"
                             role="Scrum Master Desenvolvedora Back-End"
-                            linkedin="https://linkedin.com/in/lucas-santos"
-                            github="https://github.com/LucasAlexSant" /></div>
+                            linkedin="https://www.linkedin.com/in/adriellemerces/"
+                            github="https://github.com/adriellemerces" /></div>
 
                         <div className="team"><Team imagem={lucas} name="Lucas Alexandre"
                             role="Desenvolvedor FullStack"
-                            linkedin="https://linkedin.com/in/lucas-santos"
+                            linkedin="https://www.linkedin.com/in/lucasalexsant"
                             github="https://github.com/LucasAlexSant" /></div>
 
                         <div className="team"><Team imagem={daniel} name="Daniel Santos"
                             role="Desenvolvedor Front-End"
-                            linkedin="https://linkedin.com/in/lucas-santos"
-                            github="https://github.com/LucasAlexSant" /></div>
+                            linkedin="https://www.linkedin.com/in/daniel-ssantoss/"
+                            github="https://github.com/k4lleb" /></div>
                     </div>
                     <div className="developers-right">
+
                         <div className="team"><Team imagem={luiz} name="Luiz Augusto"
                             role="UI/UX Designer Front-End"
-                            linkedin="https://linkedin.com/in/lucas-santos"
-                            github="https://github.com/LucasAlexSant" /></div>
+                            linkedin="https://www.linkedin.com/in/pinustranslation/"
+                            github="https://github.com/coffeasack" /></div>
+
                         <div className="team"><Team imagem={malu} name="Maria Luiza"
                             role="Desenvolvedora Back-End e Marketing"
-                            linkedin="https://linkedin.com/in/lucas-santos"
-                            github="https://github.com/LucasAlexSant" /></div>
+                            linkedin="https://www.linkedin.com/in/mariludev/"
+                            github="" /></div>
+
                         <div className="team"><Team imagem={paulo} name="Paulo Rosseto"
                             role="Desenvolvedor FullStack e Financeiro"
-                            linkedin="https://linkedin.com/in/lucas-santos"
-                            github="https://github.com/LucasAlexSant" /></div>
+                            linkedin="https://www.linkedin.com/in/paulo-rossetto/"
+                            github="https://github.com/Paulo-Rossetto" /></div>
                     </div>
                 </div>
             </div>

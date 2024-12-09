@@ -32,7 +32,11 @@ const Sidebar = () => {
             <aside id="sidebar">
                 <div className="d-flex">
                     <button className="toggle-btn" type="button" aria-label="Toggle Sidebar" aria-expanded="false">
-                        <FaThLarge style={{ color: "#FFFFFF" }} />
+                        <img
+                            src="Logo_branco.png"
+                            alt="Logo"
+                            style={{ width: "50px", height: "auto" }}
+                        />                
                     </button>
                     <div className="sidebar-logo">
                         <Link>FlorEssência</Link> {/* Usando Link ao invés de <a> */}

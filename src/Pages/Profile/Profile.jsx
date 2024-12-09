@@ -23,7 +23,7 @@ function Profile() {
             <main className={styles['main-content']}>
                 <div className={styles['profile-header']}>
                     <div className={styles['profile-picture']}></div>
-                    <h2>ADRIANA MINHOCA MERCES</h2>
+                    <h2>ADRIANA MIOKI MERCES</h2>
                     <button className={styles['edit-button']}>
                         <FaPencilAlt color="white" />
                     </button>

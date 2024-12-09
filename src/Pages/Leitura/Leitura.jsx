@@ -1,112 +1,200 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "../../components/SideBar/SideBar";
 import Slider from "react-slick";
+import ModalLeitura from "../../components/ModalLeitura/ModalLeitura";
 import "./Leitura.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Configurações do Slider
-const settings = {
+const sliderSettings = {
   dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
-    {
-      breakpoint: 1024,
-      settings: { slidesToShow: 2 },
-    },
-    {
-      breakpoint: 768,
-      settings: { slidesToShow: 1 },
-    },
+    { breakpoint: 1024, settings: { slidesToShow: 2 } },
+    { breakpoint: 768, settings: { slidesToShow: 1 } },
   ],
 };
 
-// Dados com imagens associadas para cada carrossel
-const livrosAutoestima = [
-  { titulo: "Diários de Reflexão", imagem: "livro1.png" },
-  { titulo: "Histórias Inspiradoras", imagem: "/imagens/historias.jpg" },
-  { titulo: "Exercícios de Autoconhecimento", imagem: "/imagens/exercicios.jpg" },
-  { titulo: "Conteúdos Motivacionais", imagem: "/imagens/motivacionais.jpg" },
-];
-
-const livrosSaudeEmocional = [
-  { titulo: "Mindfulness e Meditação", imagem: "/imagens/mindfulness.jpg" },
-  { titulo: "Estratégias de Relaxamento", imagem: "/imagens/relaxamento.jpg" },
-  { titulo: "Dicas para Redução do Estresse", imagem: "/imagens/estresse.jpg" },
-  { titulo: "Exercícios para Saúde Mental", imagem: "/imagens/saudemental.jpg" },
-];
-
-const livrosEmpoderamentoProfissional = [
-  { titulo: "Liderança para Mulheres", imagem: "/imagens/lideranca.jpg" },
-  { titulo: "Desenvolvendo Confiança", imagem: "/imagens/confiança.jpg" },
-  { titulo: "Planejamento de Carreira", imagem: "/imagens/planejamento.jpg" },
-  { titulo: "Desenvolvimento de Soft Skills", imagem: "/imagens/softskills.jpg" },
-];
-
-const livrosDesenvolvimento = [
-  { titulo: "Gestão do Tempo", imagem: "/imagens/gestao-tempo.jpg" },
-  { titulo: "Planejamento Estratégico", imagem: "/imagens/planejamento-estrategico.jpg" },
-  { titulo: "Organização Pessoal", imagem: "/imagens/organizacao.jpg" },
-  { titulo: "Histórias de Sucesso", imagem: "/imagens/sucesso.jpg" },
-];
-
-const livrosConteudoExclusivo = [
-  { titulo: "Guias Interativos", imagem: "/imagens/guias.jpg" },
-  { titulo: "Desafios Gamificados", imagem: "/imagens/gamificados.jpg" },
-  { titulo: "Ferramentas de Autocuidado", imagem: "/imagens/autocuidado.jpg" },
-  { titulo: "Acompanhamentos Psicológicos", imagem: "/imagens/psicologia.jpg" },
+// Dados das seções e livros
+const secoesLivros = [
+  {
+    titulo: "Autoestima & Autoconhecimento",
+    livros: [
+      { 
+        titulo: "Empoderamento Feminino", 
+        imagem: "empoderamento-feminino.png",
+        descricao: "Explorando o poder do autoconhecimento feminino para transformar sua autoestima.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Como Desenvolver a Autocompaixão", 
+        imagem: "como-desenvolver-a-autocompaixao.png",
+        descricao: "Estratégias práticas para fortalecer a autocompaixão no dia a dia.",
+        link: "https://exemplo.com/mais-confiante",
+        
+      },
+      { 
+        titulo: "Amor, Liberdade e Osho", 
+        imagem: "AmorLiberdadeOsho.jpg",
+        descricao: "Reflexões inspiradoras sobre amor e liberdade segundo Osho.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "365 Dias de Amor", 
+        imagem: "365diasDeAmor.png",
+        descricao: "Uma jornada diária para cultivar o amor próprio todos os dias.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+    ],
+  },
+  {
+    titulo: "Autoconfiança",
+    livros: [
+      { 
+        titulo: "Como Ser Mais Confiante", 
+        imagem: "como-ser-mais-confiante.png",
+        descricao: "Estratégias e práticas para se tornar mais confiante no dia a dia.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Construção da Confiança", 
+        imagem: "ConstrucaoDaConfianca.png",
+        descricao: "Passos fundamentais para estabelecer e fortalecer a autoconfiança.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Superando o Medo da Vulnerabilidade", 
+        imagem: "superando-o-medo-da-vulnerabilidade.png",
+        descricao: "Como enfrentar e superar medos emocionais com autoconhecimento.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Estabelecendo Limites com Seus Parceiros", 
+        imagem: "estabelecendo-limites-com-seus-parceiros.png",
+        descricao: "Aprenda a estabelecer relações saudáveis e limites claros em relacionamentos.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+    ],
+  },
+  {
+    titulo: "Autoconhecimento",
+    livros: [
+      { 
+        titulo: "Desista Nunca", 
+        imagem: "desista-nunca.jpg",
+        descricao: "Inspirações para persistir diante dos desafios e adversidades da vida.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Não Sei o que Fazer da Minha Vida", 
+        imagem: "nao-sei-o-que-fazer-da-minha-vida.png",
+        descricao: "Reflexões para quem busca propósito e clareza sobre seu futuro.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Mindfulness", 
+        imagem: "mindfulness.png",
+        descricao: "Práticas para focar no momento presente e reduzir a ansiedade.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Gerenciando Emoções", 
+        imagem: "GerenciandoEmoções.jpg",
+        descricao: "Aprenda a identificar e controlar suas emoções de maneira saudável.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+    ],
+  },
+  {
+    titulo: "Bem-estar e Equilíbrio Emocional",
+    livros: [
+      { 
+        titulo: "Maneiras de Aliviar o Estresse", 
+        imagem: "maneiras-de-aliviar-o-estresse.png",
+        descricao: "Técnicas simples para aliviar o estresse e aumentar o bem-estar.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Como Tornar Seu Trabalho Mais Agradável", 
+        imagem: "como-tornar-seu-trabalho-mais-agradavel.png",
+        descricao: "Dicas práticas para transformar sua rotina profissional em algo prazeroso.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Como Se Sentir Melhor em Relação ao Seu Trabalho", 
+        imagem: "como-se-sentir-melhor-em-relacao-ao-seu-trabalho.png",
+        descricao: "Estratégias para melhorar a percepção sobre seu ambiente profissional.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+      { 
+        titulo: "Como Fazer uma Pausa do Trabalho", 
+        imagem: "como-fazer-uma-pausa-do-trabalho.png",
+        descricao: "Aprenda a fazer pausas eficientes para recarregar suas energias.",
+        link: "https://exemplo.com/mais-confiante",
+      },
+    ],
+  },
 ];
 
 const Leitura = () => {
+  const [modalInfo, setModalInfo] = useState({ isOpen: false, titulo: "", imagem: "", descricao: "", link: "" });
+
+  const abrirModal = (livro) => {
+    setModalInfo({ 
+      isOpen: true, 
+      titulo: livro.titulo, 
+      imagem: livro.imagem, 
+      descricao: livro.descricao, 
+      link: livro.link 
+    });
+  };
+
+  const fecharModal = () => {
+    setModalInfo({ isOpen: false, titulo: "", imagem: "", descricao: "", link: "" });
+  };
+
+  const renderLivros = (livros) =>
+    livros.map((livro, index) => (
+      <div
+        className="livro"
+        key={index}
+        onClick={() => abrirModal(livro)}
+      >
+        <img src={livro.imagem} alt={livro.titulo} className="livro-img" />
+        <p>{livro.titulo}</p>
+      </div>
+    ));
+
   return (
     <div className="main-leitura">
       <Sidebar />
       <div className="conteudo">
-        {/* Seção - Autoestima e Autoconhecimento */}
         <div className="secoes-conteudo">
-          <div className="secao">
-            <h2 className="titulo-secao">Autoestima & Autoconhecimento</h2>
-            <Slider {...settings} className="livros-grid">
-              {livrosAutoestima.map((livro, index) => (
-                <div className="livro" key={index}>
-                  <img src={livro.imagem} alt={livro.titulo} className="livro-img" />
-                  <p>{livro.titulo}</p>
-                </div>
-              ))}
-            </Slider>
-          </div>
-
-          {/* Seção - Saúde Emocional */}
-          <div className="secao">
-            <h2 className="titulo-secao">Saúde Emocional</h2>
-            <Slider {...settings} className="livros-grid">
-              {livrosSaudeEmocional.map((livro, index) => (
-                <div className="livro" key={index}>
-                  <img src={livro.imagem} alt={livro.titulo} className="livro-img" />
-                  <p>{livro.titulo}</p>
-                </div>
-              ))}
-            </Slider>
-          </div>
-
-          {/* Seção - Empoderamento Profissional */}
-          <div className="secao">
-            <h2 className="titulo-secao">Empoderamento no Ambiente Profissional</h2>
-            <Slider {...settings} className="livros-grid">
-              {livrosEmpoderamentoProfissional.map((livro, index) => (
-                <div className="livro" key={index}>
-                  <img src={livro.imagem} alt={livro.titulo} className="livro-img" />
-                  <p>{livro.titulo}</p>
-                </div>
-              ))}
-            </Slider>
-          </div>
+          {secoesLivros.map((secao, index) => (
+            <div className="secao" key={index}>
+              <h2 className="titulo-secao">{secao.titulo}</h2>
+              <Slider {...sliderSettings} className="livros-grid">
+                {renderLivros(secao.livros)}
+              </Slider>
+            </div>
+          ))}
         </div>
       </div>
+
+      {/* Modal com Descrição */}
+      <ModalLeitura
+        isOpen={modalInfo.isOpen}
+        onClose={fecharModal}
+        titulo={modalInfo.titulo}
+        imagem={modalInfo.imagem}
+        descricao={modalInfo.descricao}
+        link={modalInfo.link}
+      />
     </div>
   );
 };
