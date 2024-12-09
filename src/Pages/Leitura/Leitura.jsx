@@ -142,7 +142,15 @@ const secoesLivros = [
 ];
 
 const Leitura = () => {
-  const [modalInfo, setModalInfo] = useState({ isOpen: false, titulo: "", imagem: "", descricao: "", link: "" });
+  const [modalInfo, setModalInfo] = useState({
+    isOpen: false,
+    titulo: "",
+    imagem: "",
+    descricao: "",
+    link: "",
+  });
+
+  const [clickStartTime, setClickStartTime] = useState(0);
 
   const abrirModal = (livro) => {
     setModalInfo({ 
@@ -158,12 +166,24 @@ const Leitura = () => {
     setModalInfo({ isOpen: false, titulo: "", imagem: "", descricao: "", link: "" });
   };
 
+  const handleMouseDown = () => {
+    setClickStartTime(Date.now());
+  };
+
+  const handleMouseUp = (livro) => {
+    const clickDuration = Date.now() - clickStartTime;
+    if (clickDuration < 200) {
+      abrirModal(livro);
+    }
+  };
+
   const renderLivros = (livros) =>
     livros.map((livro, index) => (
       <div
         className="livro"
         key={index}
-        onClick={() => abrirModal(livro)}
+        onMouseDown={handleMouseDown}
+        onMouseUp={() => handleMouseUp(livro)}
       >
         <img src={livro.imagem} alt={livro.titulo} className="livro-img" />
         <p>{livro.titulo}</p>
