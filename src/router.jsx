@@ -24,6 +24,16 @@ import AlbumInteligenciaEmocional from './Pages/AlbumReflexao/AlbumInteligenciaE
 
 import DiarioSuperacao from './Pages/Diarios/DiarioSuperacao/DiarioSuperacao'
 import DiarioGratidao from './Pages/Diarios/DiarioGratidao/DiarioGratidao'
+import ResultadoTesteAutoEstima from './Pages/TesteAutoEstima/ResultadoTesteAutoEstima'
+import TesteAutoEstima05 from './Pages/TesteAutoEstima/TesteAutoEstima05'
+import TesteAutoEstima06 from './Pages/TesteAutoEstima/TesteAutoEstima06'
+import TesteAutoEstima07 from './Pages/TesteAutoEstima/TesteAutoEstima07'
+import TesteAutoEstima08 from './Pages/TesteAutoEstima/TesteAutoEstima08'
+import TesteAutoEstima09 from './Pages/TesteAutoEstima/TesteAutoEstima09'
+import TesteAutoEstima10 from './Pages/TesteAutoEstima/TesteAutoEstima10'
+import TesteAutoEstima11 from './Pages/TesteAutoEstima/TesteAutoEstima11'
+import TesteAutoEstima12 from './Pages/TesteAutoEstima/TesteAutoEstima12'
+import TesteAutoEstima13 from './Pages/TesteAutoEstima/TesteAutoEstima13'
 
 
 function RouterApp() {
@@ -44,6 +54,17 @@ function RouterApp() {
                 <Route path="/TesteAutoEstima02" element={<TesteAutoEstima02 />}>TesteAutoEstima02</Route>
                 <Route path="/TesteAutoEstima03" element={<TesteAutoEstima03 />}>TesteAutoEstima03</Route>
                 <Route path="/TesteAutoEstima04" element={<TesteAutoEstima04 />}>TesteAutoEstima04</Route>
+                <Route path="/TesteAutoEstima05" element={<TesteAutoEstima05 />}>TesteAutoEstima05</Route>
+                <Route path="/TesteAutoEstima06" element={<TesteAutoEstima06 />}>TesteAutoEstima06</Route>
+                <Route path="/TesteAutoEstima07" element={<TesteAutoEstima07 />}>TesteAutoEstima07</Route>
+                <Route path="/TesteAutoEstima08" element={<TesteAutoEstima08 />}>TesteAutoEstima08</Route>
+                <Route path="/TesteAutoEstima09" element={<TesteAutoEstima09 />}>TesteAutoEstima09</Route>
+                <Route path="/TesteAutoEstima10" element={<TesteAutoEstima10 />}>TesteAutoEstima10</Route>
+                <Route path="/TesteAutoEstima11" element={<TesteAutoEstima11 />}>TesteAutoEstima11</Route>
+                <Route path="/TesteAutoEstima12" element={<TesteAutoEstima12 />}>TesteAutoEstima12</Route>
+                <Route path="/TesteAutoEstima13" element={<TesteAutoEstima13 />}>TesteAutoEstima13</Route>
+                <Route path="/ResultadoTesteAutoEstima" element={<ResultadoTesteAutoEstima />} />
+
 
                 <Route path="/Profile" element={<Profile />}>Profile</Route>
                 <Route path="/Leitura" element={<Leitura />}>Leitura </Route>

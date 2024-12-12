@@ -116,6 +116,8 @@
   gap: 10px;
   width: 100%;
   max-width: 400px;
+  padding-top: 20px;
+
 }
 
 .option-button {
@@ -130,5 +132,28 @@
 }
 
 .option-button:hover {
-  background-color: #555;
+  background-color: #ff0000;
+}
+
+.option-button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #000000;
+  background-color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option-button:hover {
+  background-color: #ff6584;
+}
+
+.option-button.selected {
+  background-color: #ff4081; /* Cor de destaque para a opção selecionada */
+  border-color: #ff4081; /* Cor do borda quando selecionada */
+}
+
+.continue-button:disabled {
+  background-color: #000000;
+  cursor: not-allowed;
 }

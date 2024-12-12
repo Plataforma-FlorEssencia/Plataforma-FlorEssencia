@@ -5,7 +5,7 @@ function TesteAutoEstima02() {
     return (
         <div className="container-teste-auto-estima">
             <div className="progress-bar">
-                <div className="progress-bar-filled"></div>
+                <div className="progress-bar-filled" style={{width: '10%'}}></div>
             </div>
             <div className="message">
                 <p>Bem-vinda ao Teste de Autoestima! Este teste ajudará você a entender melhor o nível da sua autoestima. Por favor, responda com sinceridade.</p>
