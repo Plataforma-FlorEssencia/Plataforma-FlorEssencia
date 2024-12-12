@@ -3,7 +3,7 @@ import './Login.css';
 import { FaGoogle, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import sideImage from '../../assets/MulherComputador.png';
 import logo from '../../assets/Logo.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ function Login() {
 
               <button type="submit" className="btn btn-pink w-100 mb-3">FAZER LOGIN</button>
               <p className="text-center">
-                Não tem uma conta? <a href="/" className="text-decoration-none text-pink">Registrar-se</a>
+                Não tem uma conta? <Link to="/register" className="text-decoration-none text-pink">Registrar-se</Link>
               </p>
             </form>
             <div className="d-flex justify-content-center gap-3 social-login mt-3">

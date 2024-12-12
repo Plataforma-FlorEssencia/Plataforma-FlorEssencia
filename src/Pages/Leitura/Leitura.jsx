@@ -172,7 +172,7 @@ const Leitura = () => {
 
   const handleMouseUp = (livro) => {
     const clickDuration = Date.now() - clickStartTime;
-    if (clickDuration < 200) {
+    if (clickDuration < 100) {
       abrirModal(livro);
     }
   };
@@ -192,7 +192,9 @@ const Leitura = () => {
 
   return (
     <div className="main-leitura">
+      
       <Sidebar />
+      
       <div className="conteudo">
         <div className="secoes-conteudo">
           {secoesLivros.map((secao, index) => (
@@ -202,7 +204,10 @@ const Leitura = () => {
                 {renderLivros(secao.livros)}
               </Slider>
             </div>
+            
           ))}
+          
+
         </div>
       </div>
 

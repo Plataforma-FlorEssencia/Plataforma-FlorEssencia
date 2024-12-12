@@ -17,14 +17,14 @@ const ShowCase = () => {
         {
             crp: "08/40729",
             nome: "Adriely Ferreira Rosa Poiani",
-            foto: "mulher-registro.png",
+            foto: "psicologaAdriely.png",
             especialidades: ["Ansiedade", "Angústia", "Alterações de humor"],
             abordagem: "Psicanálise - Winnicott",
         },
         {
             crp: "11/20270",
             nome: "Jessica Kerolaynne",
-            foto: "mulher-registro.png",
+            foto: "psicologaJessica.png",
             especialidades: ["Depressão", "Vícios", "Procrastinação"],
             abordagem: "Análise do Comportamento - Behaviorism",
         }
